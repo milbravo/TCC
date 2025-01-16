@@ -4,14 +4,6 @@
 
 \chapter{Revisão Bibliográfica}\label{chap:revisao}
 
-	Ao redigir uma revisão bibliográfica em trabalhos acadêmicos, é crucial adotar uma abordagem sistemática e crítica. Inicie identificando e selecionando fontes 
-	relevantes que abordem diretamente o tema de pesquisa, priorizando publicações acadêmicas revisadas por pares, como artigos de periódicos, livros e conferências. 
-	Uma boa prática é organizar a literatura em temas ou escolas de pensamento, facilitando a compreensão do leitor sobre o estado da arte e as lacunas existentes. 
-	É importante também avaliar criticamente cada obra, discutindo sua contribuição para o campo, metodologias, resultados e limitações. A revisão deve ser escrita 
-	de forma coesa, com transições suaves entre os trabalhos discutidos, e deve terminar destacando como a pesquisa atual se insere e contribui para o conhecimento 
-	existente. Citando adequadamente todas as fontes, evita-se o plágio e reconhece-se o trabalho dos pesquisadores originais, além de fornecer ao leitor caminhos 
-	para aprofundamento.
-
 \section{Ciclo de Vida}
 
 	A definição e criação de um ciclo de vida é uma das formas da Engenharia de Sistemas (ES) atuar no seu propósito de viabilizar o sucesso de um sistema ao
@@ -28,7 +20,7 @@
 	cada um tem seu próprio ciclo de vida, no geral em um SoS cada elemento do sistema terá seu próprio ciclo de vida, e o do SoS influencia no do SoI, de forma
 	que sua evolução deve ser considerada quando olhado para o ciclo de vida do SoI.
 
-	O ciclo de vida genérico trazido no INCOSE nos mostra os seis estágios básicos existentes numa estruturação em "V" que busca mostrar de forma visual a aparição desses estágios
+	O ciclo de vida genérico trazido no INCOSE SE Handbook nos mostra os seis estágios básicos existentes numa estruturação em "V" que busca mostrar de forma visual a aparição desses estágios
 	ao longo do tempo, realçando também o possível paralelismo entre eles. Na figura \ref{} podemos ver uma representação do que foi mostrado no livro.
 
 	O estágio de conceito: reprenta a parte exploratória de pesquisas e origens do reconheimento de uma necessidade, ou uma nova missão, ou uma nova capacidade de negócio, ou
@@ -48,10 +40,60 @@
 	O estágio de produção: nesse estágio o projeto base definido no estágio anterior sai do papel e dá lugar ao sistema de fato, que será testado e qualificado para ser
 	colocado para utilização.
 
-	O estágio de utilização: aqui as partes do SoI "deixam" de existir e dão lugar a um sistema aprovado para ser utilizado.
+	O estágio de utilização: o início desse estágio se dá com a liberação do sistema ou parte dele para uso, incluindo os sistemas de apoio que são necessários para certas
+	funcionalidades. Esse estágio comumente é o mais longo do ciclo de vida e é comum que mudanças e melhorias no SoI ocorram ao longo da utilização, lembrando sempre de fazer
+	o gerenciamento dos riscos e documentação para garantir a integridade e manutenção do SoI.
 
-	O estágio de suporte:
+	O estágio de suporte: segue paralelo ao estágio de utilização assim que alguma funcionalidade se torna disponível, no entanto o preparo e planejamento desse estágio pode 
+	ser iniciado antes como a aquisição de sobresalentes. Nesse estágio que são percebidas as melhorias e mudanças que podem vir a ser implementadas durante a utilização.
 
-	O estágio de descontinuação:
+	O estágio de descontinuação: acontece quando o sistema sai de operação e normalmente seu início dá fim aos estágios de utilização e produção, ou no máximo existe uma pequena
+	sobreposição entre estes. Além de definir como será feito o descarte físico ou virtual das partes é nessa etapa que é feita um possivel análise de extensão de vida útil de parte do Sistema
+	e o arquivamento de documentos importantes sobre o mesmo.
 
+	Ainda no INCOSE SE Handbook, são trazidos conceitos importante sobre os \textit{decision gates} que coexistem entre os estágio dos ciclo de vida, tanto no início quanto no fim de cada estágio.
+	Dentre os objetivos dos \textit{decision gates} estão o acompanhamento da evolução da maturidade do sistema, a conferência dos critérios de saída ou entrada de um estágio,
+	a análise de risco mediante à situação atual do sistema, e por fim uma tomada de decisão sobre o que será feito. Podendo haver um regresso no ciclo de vida, um avanço, uma pausa 
+	ou até mesmo o cancelamento do projeto.
 
+	É importante saber equilibrar a formalidade e frequência desses eventos, visto que eles envolvem diferentes partes interessadas, gestores e especialistas, e além disso as
+	decisões devem ser guiadas por dados tomados nos estágios do ciclo de vida e nos artefatos que são gerados para esse momento. Isso evita considerações desnecessárias e 
+	inadequadas que podem prejudicar futuramente.
+
+	As três abordagens principais trazidas pelo livro para os ciclos de vida são, sequêncial, incremental e evolucionário. As principais características dessas três abordagens
+	podem ser resumidas na Tabela \ref{tab:revisao:ciclodevida:abordagens} apresentada.
+
+	\begin{table}[!h]
+		\centering
+		\caption{Características das abordagens de um ciclo de vida}
+		\begin{tabular}{cccc}
+			\hline
+			Abordadem & Requisitos definidos no ínicio & Iterações planejadas & Múltiplas instalações \\
+			\hline
+			Sequencial & Todos os requisitos & Apenas uma & Não\\
+			Incremental & Todos os requisitos & Múltiplas & Potencialemnte\\
+			Evolucionário & Parte dos requisitos & Múltiplas & Tipicamente\\
+			\hline
+		\end{tabular}
+		\label{tab:revisao:ciclodevida:abordagens}
+	\end{table}
+
+	Durante a execução dos estágios do ciclo de vida várias tarefas são executadas, e para isso alguns processos precisam ser realizados para garantir a consistência das atividades. Um conjunto
+	de processos é definido no livro e a execução de cada um deles varia de acordo com os estágios existentes no ciclo de vida do sistema.
+	
+\section{Arquitetura do sistema}\label{sec:revisao:arqSistema}
+
+	Como mencionado na seção \ref{sec:revisao:arqSistema} existem diferentes processos durante o ciclo de vida de um sistema ou projeto. Um deles é o 
+	\textit{Processo de Definição da Arquitetura do Sistema}. A existência de um  \textit{Estilos de Arquitetura} é de extrema importância para que esse processo seja executado com êxito. Ele
+	atua como um modelo, ou guia, para se construir a arquitetura do sistema. Os \textit{Estilos de Arquitetura} podem ser definidos com base nos ponto de vista da arquitetura, no elementos do
+	sistema e seus relacionamentos, nas conexões, interfaces, mecanismos de interação e possíveis restrições.
+	
+	Além dos \textit{Estilos de Arquitetura}, outro conceito importante é o de \textit{Padrões de Arquitetura}. Eles são modelos simplificados mas completos no que diz respeito aos elementos do
+	sistema e são reutilizáveis para diferentes tipos cenários. O uso de \textit{Padrões de Arquitetura} agiliza  a documentação, facilita a comunicação, promove o reúso, melhora a produtividade
+	e eficiência e serve como um ponto de início para o desenvolvimento de novos sistemas.
+
+	Como o conceito de arquitetura pode ser muito abrangente, o SEBOK mostra três segmentações de arquitetura, a arquitetura funcional,
+	lógica e a física.
+
+	A arquitetura funcional compreende as funcionalidades do sistema, ou seja, quais funções ou comportamentos aquele sistema executa ou possui em diferentes contextos para atingir os objetivos
+	esperados.

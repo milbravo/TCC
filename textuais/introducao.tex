@@ -4,18 +4,102 @@
 
 \chapter{Introdução}\label{chap:introducao} % Inglês: Introduction
 
-	Parte inicial do texto na qual se apresenta a delimitação do assunto tratado, os 
-	objetivos da pesquisa e outros elementos necessários para apresentar o tema 
-	do trabalho. O texto tem o objetivo de introduzir o leitor ao trabalho e 
-	apresentar as informações para uma compreensão geral da proposta
-	desenvolvida.
+	Ao longo dos anos vivenciando a experiência no mercado de trabalho em diferentes 
+	empresas, é possível notar a dificuldade em mapear, seguir e otimizar processos 
+	nas organizações. Um fator agravante é quando o processo não é simplesmente 
+	para definir operações administrativas, mas também para definir um modelo de 
+	serviço prestado. O serviço em questão pode ser resumido no desenvolvimento de 
+	ferramentas para estruturação, automação e/ou digitalização de processos dentro 
+	de organizações e será detalhado mais adiante no texto.
+
+	Outro ponto que vale ser ressaltado, é a necessidade de um vasto conhecimento 
+	em arquitetura de soluções e de ferramentas e técnicas de desenvolvimento para 
+	viabilização do serviço e sua manutenção. 
+
+	Primeiramente, vale notar que o mercado cria a necessidade do serviço, e este 
+	surge de forma orgânica e na maioria dos casos sem uma definição adequada. No 
+	caso, será definido o ciclo de vida do sistema de interesse que constitui esse 
+	serviço, a fim de padronizar as etapas e documentar de acordo com os padrões da 
+	engenharia de sistemas. 
+
+	Mesmo sem esse ciclo de vida definido já são percebidas deficiências operacionais 
+	nas integrações e relacionamentos entre as partes interessadas do sistema de 
+	interesse. Onde mais se destaca essa deficiência é na parte de 
+	gerenciamento de requisitos e rastreabilidade do sistema. No ciclo de vida atual 
+	não há nenhuma documentação de requisitos ou rastreabilidade, e isso afeta tanto 
+	as estimativas de esforço e tempo para os desenvolvimentos e possíveis mudanças, 
+	quanto deixa uma grande incerteza de impacto nas manutenções que possam ser 
+	necessárias. Ao resolver um problema ou instabilidade, podem ser gerados outros 
+	que só serão notados pelos usuários finais do sistema. 
+
+	Alterações e inclusão de requisitos nas fases finais de desenvolvimento ou depois 
+	do sistema desenvolvido são muito mais custosas que se estes tivessem sido 
+	refinados e definidos no início. E sem a capacidade de analisar a rastreabilidade do 
+	sistema, como dito anteriormente, as estimativas têm pouco fundamento e 
+	refletem pouco a realidade. Logo, prazos são mal calculados, métricas são extraídas 
+	de maneira errônea e o gerenciamento da equipe fica prejudicado. 
+
+	Manter o ciclo de vida do sistema de interesse atualizado e fiel à realidade faz com 
+	que custos sejam reduzidos durante a concepção e operação do sistema. De forma 
+	direta na otimização dos recursos empregados que só é possível com processos
+	etapas bem definidas, quando indireta na redução de retrabalho e tempo gasto em 
+	atividades desnecessárias.  
+
+	Após o mapeamento do ciclo de vida atual, propostas de revisão e melhoria serão 
+	feitas para melhor tratamento da deficiência operacional citada anteriormente. Em 
+	seguida será proposta uma ferramenta para garantir a rastreabilidade do sistema 
+	e o gerenciamento dos requisitos de forma mais integrada e dinâmica. 
+
+	O estudo de caso e análise do sistema de interesse acontece em uma empresa 
+	multinacional, com diversos ramos de atuação e ativos geradores de receita. No 
+	entanto, a respeito do escopo de trabalho do time em questão, esses detalhes de 
+	produtos e mercado não são diretamente relevantes para o sistema de interesse. 
+
+	Como dito anteriormente, o mercado gerou o serviço e o sistema de interesse a 
+	ser trabalhado. Tem sido uma tendência em diversas empresas a criação de times, 
+	setores ou áreas focadas na digitalização e automação de processos, rotinas ou 
+	atividades repetitivas na empresa. O surgimento do time de atuação veio dessa 
+	tendência, dentro da grande área de “Digitalização Global” da organização foi 
+	montada uma equipe com o objetivo de atender todos esses focos de trabalho, com 
+	atendimento disponível para todas as áreas de negócio da américa do sul. 
+
+	Com áreas de negócios, são englobados times de marketing, finanças, 
+	pagamentos, segurança da informação, tesouraria, infraestrutura de tecnologia, 
+	qualidade, recursos humanos e vários outros times que trabalham em atividades 
+	de escritório que podem ser alvo da equipe de digitalização. Esses são os principais 
+	interessados, e considerados os clientes do serviço prestado. 
+
+	O sistema de interesse a ser estudado é o serviço interno prestado a esses clientes 
+	citados anteriormente. Esse serviço é o desenvolvimento de uma solução 
+	tecnológica que resolva algum problema ou automatize algum processo trazido pelo 
+	time cliente. É feita uma análise do contexto e realizada uma proposta de resolução 
+	para o problema, e em seguida se inicia o desenvolvimento caso isso seja decidido. 
+	Em alguns casos, é necessário ainda o suporte à solução desenvolvida, dependendo 
+	da complexidade e volume de utilização. 
+
+	O time trabalha numa estrutura de fábrica de aplicativos ou fábrica de software, 
+	com poucos desenvolvedores experientes e generalistas, para serem bem 
+	engajados com todas as possibilidades a serem exploradas. Esse serviço é repetido 
+	a cada nova solução desenvolvida para os times clientes, novos ou não. 
+	Diversas tecnologias são utilizadas durante o desenvolvimento, sendo definidas de 
+	acordo com a necessidade de cada situação. Entretanto, as duas principais 
+	tecnologias são as ferramentas “low code” da empresa Microsoft, conhecidas como 
+	ferramentas da “Power Platform”, e códigos em Python para execução de RPAs (do 
+	inglês “robot process automation”). 
 
 	\section{Objetivos Geral e Específicos}\label{sec:introducao:objetivos}
 
-		Descrever os objetivos geral e específicos do trabalho. O objetivo
-		geral devem ser claro e conciso, indicando o propósito do trabalho.
-		Os objetivos específicos devem ser apresentados de forma a indicar
-		os passos necessários para atingir o objetivo geral. Geralmente, em formato de tópicos.
+		Podemos destacar como objetivos gerais do trabalho realizado a implementação de 
+		técnicas e processos de engenharia de sistemas para otimizar a prestação de um 
+		serviço de software. 
+		Já como objetivos específicos podem ser destacados: 
+		\begin{itemize}
+			\item O mapeamento da situação atual do serviço prestado e do produto entregue.
+			\item A identificação de oportunidades de melhoria no presente cenário. 
+			\item Melhora da definição e levantamento de requisitos no processo existente. 
+		\end{itemize}
+ 		
+ 		
 
 	\section{Contribuições e Originalidade}\label{sec:introducao:contribuicoes}
 
