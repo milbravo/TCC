@@ -10,17 +10,17 @@
 	mesmo tempo que otimiza a competição existente entre os objetivos das partes interessadas. Ao desmembrar o esforço total e definir os estágios, seus papéis novas
 	caracteristíscas do sistema, seus critérios de completude, seus riscos existentes e ao fim tomar uma decisão, está sendo feito a criação do ciclo de vida.
 
-	Entre cada estágio defido, há o que é chamado em inglês de \textit{decision gates} onde é feita a análise do progresso, e como o nome sugere é tomada uma decisão
+	Entre cada estágio defido, há o que é chamado em inglês de ``decision gates'' onde é feita a análise do progresso, e como o nome sugere é tomada uma decisão
 	quanto ao desenvolvimento do sistema.
 
 	O ciclo de vida de um sistema é definido a partir de suas características e particularidades, de modo que seus estágios sejam inseridos para atender todas as suas
 	necessidades. Os estágios podem aparecer mais de uma vez, serem executados sequencialmente ou paralelamente e serem inseridos a qualquer momento do ciclo de vida.
 
-	Há casos em que o Sistema de Interesse(SoI do inglês \textit{System os Interests}) é parte de um Sistema de Sistemas(SoS, do inglês \textit{System os Systems}). Nesse caso,
+	Há casos em que o Sistema de Interesse(SoI do inglês ``System os Interests'') é parte de um Sistema de Sistemas(SoS, do inglês ``System os Systems''). Nesse caso,
 	cada um tem seu próprio ciclo de vida, no geral em um SoS cada elemento do sistema terá seu próprio ciclo de vida, e o do SoS influencia no do SoI, de forma
 	que sua evolução deve ser considerada quando olhado para o ciclo de vida do SoI.
 
-	O ciclo de vida genérico trazido no INCOSE SE Handbook nos mostra os seis estágios básicos existentes numa estruturação em "V" que busca mostrar de forma visual a aparição desses estágios
+	O ciclo de vida genérico trazido no \cite{incoseHandbook} nos mostra os seis estágios básicos existentes numa estruturação em "V" que busca mostrar de forma visual a aparição desses estágios
 	ao longo do tempo, realçando também o possível paralelismo entre eles. Na figura \ref{} podemos ver uma representação do que foi mostrado no livro.
 
 	O estágio de conceito: reprenta a parte exploratória de pesquisas e origens do reconheimento de uma necessidade, ou uma nova missão, ou uma nova capacidade de negócio, ou
@@ -34,7 +34,7 @@
 
 	O estágio de desenvolvimento: nesse estágio é definido um SoI que atende e vai de encontro com as necessidades e requisitos das partes interessadas, e que pode ser
 	produzido, utilizado, suportado e descontinuado caso necessário. O objetivo principal dessa fase é definir um projeto base de engenharia que pode ser executado, sem buscar a 
-	perfeição, mas atendendo às partes interessadas e respeitando os possíveis \textit{trade-offs} previamente definidos nesse mesmo estágio. Nesse projeto base devem estar os
+	perfeição, mas atendendo às partes interessadas e respeitando os possíveis ``trade-offs'' previamente definidos nesse mesmo estágio. Nesse projeto base devem estar os
 	requisitos, arquitetura, modelagens, documentação e planejamento para próximas fases que também podem ser vistos como saídas dessa fazer.
 
 	O estágio de produção: nesse estágio o projeto base definido no estágio anterior sai do papel e dá lugar ao sistema de fato, que será testado e qualificado para ser
@@ -51,8 +51,8 @@
 	sobreposição entre estes. Além de definir como será feito o descarte físico ou virtual das partes é nessa etapa que é feita um possivel análise de extensão de vida útil de parte do Sistema
 	e o arquivamento de documentos importantes sobre o mesmo.
 
-	Ainda no INCOSE SE Handbook, são trazidos conceitos importante sobre os \textit{decision gates} que coexistem entre os estágio dos ciclo de vida, tanto no início quanto no fim de cada estágio.
-	Dentre os objetivos dos \textit{decision gates} estão o acompanhamento da evolução da maturidade do sistema, a conferência dos critérios de saída ou entrada de um estágio,
+	Ainda no \cite{incoseHandbook}, são trazidos conceitos importante sobre os ``decision gates'' que coexistem entre os estágio dos ciclo de vida, tanto no início quanto no fim de cada estágio.
+	Dentre os objetivos dos ``decision gates'' estão o acompanhamento da evolução da maturidade do sistema, a conferência dos critérios de saída ou entrada de um estágio,
 	a análise de risco mediante à situação atual do sistema, e por fim uma tomada de decisão sobre o que será feito. Podendo haver um regresso no ciclo de vida, um avanço, uma pausa 
 	ou até mesmo o cancelamento do projeto.
 
@@ -61,7 +61,7 @@
 	inadequadas que podem prejudicar futuramente.
 
 	As três abordagens principais trazidas pelo livro para os ciclos de vida são, sequêncial, incremental e evolucionário. As principais características dessas três abordagens
-	podem ser resumidas na Tabela \ref{tab:revisao:ciclodevida:abordagens} apresentada.
+	podem ser resumidas na tabela \ref{tab:revisao:ciclodevida:abordagens} apresentada.
 
 	\begin{table}[!h]
 		\centering
@@ -81,7 +81,7 @@
 	Durante a execução dos estágios do ciclo de vida várias tarefas são executadas, e para isso alguns processos precisam ser realizados para garantir a consistência das atividades. Um conjunto
 	de processos é definido no livro e a execução de cada um deles varia de acordo com os estágios existentes no ciclo de vida do sistema.
 	
-\section{Arquitetura do sistema}\label{sec:revisao:arqSistema}
+\section{Arquitetura do Sistema}\label{sec:revisao:arqSistema}
 
 	Como mencionado na seção \ref{sec:revisao:arqSistema} existem diferentes processos durante o ciclo de vida de um sistema ou projeto. Um deles é o 
 	\textit{Processo de Definição da Arquitetura do Sistema}. A existência de um  \textit{Estilos de Arquitetura} é de extrema importância para que esse processo seja executado com êxito. Ele
@@ -92,8 +92,7 @@
 	sistema e são reutilizáveis para diferentes tipos cenários. O uso de \textit{Padrões de Arquitetura} agiliza  a documentação, facilita a comunicação, promove o reúso, melhora a produtividade
 	e eficiência e serve como um ponto de início para o desenvolvimento de novos sistemas.
 
-	Como o conceito de arquitetura pode ser muito abrangente, o SEBOK mostra três segmentações de arquitetura, a arquitetura funcional,
-	lógica e a física.
+	Como o conceito de arquitetura pode ser muito abrangente, o \cite{sebok2024} mostra três segmentações de arquitetura, a arquitetura funcional,	lógica e a física.
 
 	A arquitetura funcional compreende as funcionalidades do sistema, ou seja, quais funções ou comportamentos aquele sistema executa ou possui em diferentes contextos para atingir os objetivos
 	esperados.
