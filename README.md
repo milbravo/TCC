@@ -8,6 +8,7 @@
 
 * Seu sumário não está aparecendo por causa das duas figuras de arquiteturas que não estão no repositório. Não se esqueça de subir elas.
 * Revisar as sugestões ao longo do texto.
+* Como seu trabalho está relacionado com requisitos, sugiro acrescentar na sua revisão bibliográfica um pouco da discussão sobre Definição de Requisitos (SEBoK, Parte 3) e Gestão de Requisitos (SEBoK, Parte 3, Systems Engineering Management, Requirements Management)
 
 ## Possíveis referências para assunto de low-code
 
