@@ -11,10 +11,3 @@
 * Revisar as sugestões ao longo do texto.
 * Como seu trabalho está relacionado com requisitos, sugiro acrescentar na sua revisão bibliográfica um pouco da discussão sobre Definição de Requisitos (SEBoK, Parte 3) e Gestão de Requisitos (SEBoK, Parte 3, Systems Engineering Management, Requirements Management)
 * No TCC2, eu preciso que sua metodologia seja escrita de uma forma mais "detalhamento do problema -> solução". Então seria legal começar descrevendo todo o ciclo de vida que você está mapeamento em uma primeira seção. Na segunda seção, seria legal você chamar a atenção dos pontos do ciclo de vida que são problemático, porquê são problemáticos e qual a solução que está propondo. E, ne terceira seção, descrever mais detalhadamente esta solução.
-
-## Possíveis referências para assunto de low-code
-
-* Beranic, Tina, Patrik Rek, and Marjan Hericko. "Adoption and usability of low-code/no-code development tools." Central European Conference on Information and Intelligent Systems. Faculty of Organization and Informatics Varazdin, 2020.
-* Khorram, Faezeh, Jean-Marie Mottu, and Gerson Sunyé. "Challenges & opportunities in low-code testing." Proceedings of the 23rd ACM/IEEE International Conference on Model Driven Engineering Languages and Systems: Companion Proceedings. 2020.
-* Sanchis, Raquel, et al. "Low-code as enabler of digital transformation in manufacturing industry." Applied Sciences 10.1 (2019): 12.
-* Bock, Alexander C., and Ulrich Frank. "Low-code platform." Business & Information Systems Engineering 63 (2021): 733-740.
