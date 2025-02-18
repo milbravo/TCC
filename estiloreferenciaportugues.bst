@@ -294,7 +294,7 @@ FUNCTION {n.dashify}
 }
 
 FUNCTION {format.btitle}
-{ title emphasize
+{ title
 }
 
 FUNCTION {tie.or.space.connect}
@@ -430,8 +430,8 @@ FUNCTION {format.in.ed.booktitle}
 { booktitle empty$
     { "" }
     { editor empty$
-        { "In " booktitle emphasize * }
-        { "In " format.editors * ", " * booktitle emphasize * }
+        { "In " booktitle * }
+        { "In " format.editors * ", " * booktitle * }
       if$
     }
   if$
