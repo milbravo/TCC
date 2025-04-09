@@ -79,7 +79,7 @@
 	Durante a execução dos estágios do ciclo de vida várias tarefas são executadas, e para isso alguns processos precisam ser realizados para garantir a consistência das atividades. Um conjunto
 	de processos é definido no livro e a execução de cada um deles varia de acordo com os estágios existentes no ciclo de vida do sistema.
 	
-\section{Arquitetura do Sistema}\label{sec:revisao:arqSistema}
+	\section{Arquitetura do Sistema}\label{sec:revisao:arqSistema}
 
 	Como mencionado na seção \ref{sec:revisao:ciclodevida} existem diferentes processos durante o ciclo de vida de um sistema ou projeto. Um deles é o 
 	\textit{Processo de Definição da Arquitetura do Sistema}. A existência de um  \textit{Estilos de Arquitetura} é de extrema importância para que esse processo seja executado com êxito. Ele
@@ -94,3 +94,55 @@
 
 	A arquitetura funcional compreende as funcionalidades do sistema, ou seja, quais funções ou comportamentos aquele sistema executa ou possui em diferentes contextos para atingir os objetivos
 	esperados.
+	
+	{\color{blue}
+	\section{Trabalhos relacionados}
+		
+		\subsection{Low Code Development Cycle Investigation}
+		O uso de \textit{low code} nas organizações tem diferentes motivos, um deles é o empoderamento de seus funcionários como citado por \cite{LowCodeLifeCicle}. 
+		Ao qualificar e incentivar os funcionários a utilizarem essas tecnologias para resolverem seus problema, são criadas comunidades de \textit{citizen developers} que em tradução
+		livre pode ser chamado de ``desenvolvedores cidadãos'', ou seja, usuários finais que mesmo sem conhecimentos técnicos aprofundados em desenvolvimento de softwares, conseguem criar
+		automações e aplicativos simples para sí próprios, devido a baixa barreira de entrada para se adotar essas tecnologias. Dessa maneira, são economizados ou evitados investimentos em
+		infraestrutura e recursos humanos para se manter e criar soluções que utilizam código proficional ou \textit{pro code}, que é muito impactante no orçamento de pequenas e médias empresas.
+
+		Ainda em \cite{LowCodeLifeCicle} é introduzido o papel dos ``facilitadores \textit{low code}'', que são justamente desenvolvedores proficionais que suportam, capacitam e ajudam a
+		fortalecer a comunidade de \textit{citizen developers}. A autora ainda faz um segregação em dois cenários de desenvolvimento, um para pequenas e médias empresas onde o desenvolvimento
+		é feito inteiramente pelo \textit{citizen developer} e todos os elementos e requisitos do sistema são sua responsabilidade. O outro cenário é mais comum em grandes empresas onde há 
+		a integração com sistemas externos ou legados, e assim é necessário o envolvimento das partes interessadas na elucidação dos requisitos e na definição das lógicas de negócio. Esse
+		segundo cenário é mais adequado ao contexto desse trabalho, porém as sugestões apresentadas pela autora são focadas num ciclo de vida gerenciado pelo próprio \textit{citizen developer},
+		onde ele próprio já sabe os requisitos daquilo que quer desenvolver, e em poucos casos precisa de apoio para definí-los.
+
+		Como reforçado, em \cite{LowCodeLifeCicle}, o desenvolvimento \textit{low code} não é amplamente utilizado por engenheiros de software profissionais, e há ainda uma falta de padrões e
+		materiais de apoio para a comunidade de desenvolvedores. Para os \textit{citizen developers} esses padrões realmente são mais difíceis de serem definidos devido à heterogeneidade dos
+		motivos que levam ao uso do \textit{low code} e mesmo dos próprios desenvolvedores que tem bases de conhecimentos e visões muito diferentes entre sí. Todavia, quando se fala de desenvolvimento
+		profissional e a prestação de um serviço, isso se torna mais fácil. Mesmo que o ciclo de vida e processos técnicos difinidos não tenham uma sobreposição exata em outros contextos, podem 
+		ser modificados ou complementados por outros profissionais antes de serem aplicados.
+		
+		\subsection{Exploring Low-Code Development: A Comprehensive Literature Review}
+
+		O trabalho realizado em \cite{LowCodeExploring}, trás uma sintese do desenvolvimento utilizando
+		ferramentas \textit{low-code} abordando sua definição, suas características, seus benefícios e seus desafios.
+		O autor trás seguinte definição para o desenvolvimento de software \textit{low-code}:
+
+		``é uma abordagem de desenvolvimento que melhora o desenvolvimento rápido, flexível e iterativo tornando possível
+		uma rápida tradução dos requisitos de negócios através de uma programação visual com uma interface gráfica, abstração visual, 
+		e minimizando a programação manual; envolvendo praticantes com variadas bases de conhecimento e níveis de experiência em 
+		desenvolvimento de software.''
+
+		Uma plataforma de desenvolvimento \textit{low-code} possui algumas funcionalidades chave que são necessárias para viabilizar um 
+		ambiente gerenciável e um desenvolvimento rápido e robusto. Uma dessas funcionalidades indicadas é o suporte à modelagem dos requisitos. A importância dessa funcionalidade segundo 
+		o autor é garantir a correta implementação dos requisitos bem como garantem a rastreabilidades e verificação. Vale citar que nem toda plataforma possui todas as funcionalidades, elas na 
+		verdade são as mais comuns dentre várias plataformas que serviram de pesquisa.
+
+		O ciclo de vida de desenvolvimento \textit{low-code} proposto em \cite{LowCodeExploring} é bem semelhante a um ciclo de vida ágil, com as seguintes etapas: idealização e análise 
+		de requisitos, planejamento, design da aplicação, desenvolvimento, testes, implantação, e manutenção.
+
+		Dentre os benfícios citados pelo trabalho para a utilização do \textit{low-code}, está a reduçao de custo, aceleração do ciclo de desenvolvimento, aumento da responsividades 
+		ao negócio e mercado, promoção da invação digital e maior colaboração entre o time de desenvolvimento e negócios.
+
+		Em contraste, os desafios para essa abordagem apresentados na etapa de análise de requisitos são a especificação dos requisitos e a contante mudança dos requisitos. E um dos 13 princípios 
+		apresentados para o desenvolvimento \textit{low-code} é justamente suportar essa mudança nos requisitos. Isso retém os clientes e vai de encontro com as necessidades do negócio, 
+		onde as organizaçoes precisam dessa habilidade para responder a mudanças de mercado e processos. Os autores deixam claro ainda que os desenvolvedores \textit{low-code} devem manter um mente aberta
+		para essas mudanças, permitindo deixar fluir a dinâmica do mercado e do negócio. Pelo fato dessa abordagem de desenvolvimento ser rápida e ter um ciclo de vida mais curto, isso se torna possível 
+		mas continua desafiador. 
+	}
