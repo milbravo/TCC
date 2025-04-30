@@ -49,6 +49,152 @@ avaliação do trabalho realizado. Pontos de melhoria notados no decorrer das
 atividades realizadas, mas fora do escopo definido, serão indicados para futuras 
 evoluções ou prosseguimento do trabalho. 
 
+	
+
+	\section{{\color{blue}Ciclo de vida}}
+
+	Inicialmente definiu-se em formato de fluxograma o processo do serviço prestado, para dessa forma ser 
+	mais fácil o entendimento da ordem das etapas. Depois traremos essa representação para o formato esperado
+	na ES. A figura \ref{fig:metodologia:processFlow} mostra esse fluxograma.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.6\textwidth]{./figuras/processFlow.pdf}
+		\caption{Fluxograma do processo que descreve o serviço prestado.}
+		\label{fig:metodologia:processFlow}
+	\end{figure}
+	
+	Entrando agora no detalhamento de cada um dos blocos existentes:
+	\begin{itemize}
+		\item \textbf{Formulário de novo desenvolvimento}
+		\begin{itemize}
+			\item Descrição: Esse formulário é o ponto de entrada de uma nova demanda para o time. Quando uma área
+			cliente manifesta a necessidade e procura o auxílio do time, ela é direcionada a responder esse formulário
+			online com uma série de perguntas. E há ainda, casos em que auditorias internas encontram irregularidades em processos existentes,
+			e os encaminham para entrar em contato com o time para possíveis soluções de remediação, novamente eles são direcionados para responder o formulário.
+			\item Objetivos: Obter informações de contato e departamento do requisitante bem como o centro de custo em caso de
+			possíveis cobranças no futuro. Levantar informações iniciais sobre a solução desejada como classificação dos dados envolvidos, 
+			interdependência com outras áreas e quais dores seriam sanadas com o desenvolvimento.
+			Coletar dados e percepções que ajudem a mensurar o valor para a área e para a empresa como um todo, ao ser desenvolvida uma
+			solução para essa demanda. Solicitar documentação disponível do processo atual caso exista.
+			\item Saídas: Registro das respostas ao formulário, anexos e documentações enviadas.
+		\end{itemize}
+		\item \textbf{Reunião de contextualização}
+		\begin{itemize}
+			\item Descrição: Após recebida e revisada a resposta do formulário, o gerente de projetos organiza essa reunião com os desenvolvedores
+			envolvidos e o requisitante, orientando-o a convidar todas as outras partes interessadas. Nessa reunião, o requisitante faz uma nova explicação dos problemas e possíveis
+			de soluções, e também são sanadas possíveis dúvidas sobre as respostas do fomulário e sobre a documentação enviadas anteriormente.
+			\item Objetivos: Entender o papel de todas as partes interessadas na operação. Ver o processo atual existente sendo executado integralmente
+			pelos responsáveis. Obter exemplos de artefatos do processo como emails enviados, arquivos gerados ou compartilhados,
+			indicadores calculados e outros artefatos que sejam importantes, caso existam. Discutir casos de uso e cenários que não existem atualmente
+			mas são desejáveis na solução. Discutir políticas de retenção de dados.
+			\item Saídas: Gravação da reunião e operação atual. Arquivos com os exemplos de artefatos do processo atual.
+		\end{itemize}
+		\item \textbf{Estimativa de tarefas e esforço}
+		\begin{itemize}
+			\item Descrição: Nessa etapa os desenvolvedores de maior senioridade realizam uma sintetização das necessidades e requisitos para propor
+			um ou mais cenários de solução. Assim, em um curto espaço de tempo, são definas histórias de usuário em um alto nível, sem muito detalhamento,
+			para que seja estimado o esforço e tempo total necessário para o desenvolvimento dos cenários de solução. 
+			\item Objetivos: Definir cenários de solução para o caso trazido pelo cliente. Estimar o esforço e tempo necessário para executar as tarefas definidas para cenário.
+			\item Saídas: Documento com cenários propostos, tempo e esforço necessários para cada um. 
+		\end{itemize}
+		\item \textbf{Análise do retorno por esforço}
+		\begin{itemize}
+			\item Descrição: Ao receber o documento da etapa anterior o gerente de projetos de reúne com o gerente e o diretor da área,
+			onde realizam uma análise de enquadramento de escopo de todas as submissões que estão aguardando o início do desenvolvimento, e 
+			depois uma priorização das que serão iniciadas. Essa etapa é realizada em uma menor frenquência,
+			geralmente bimestralmente, salvo exceções em que envolvem uma falha em auditoria e que precisam de mais celeridade.
+			\item Objetivos: Definir se a demanda solicitada está no escopo do time (dentro das capacidades técnicas do time, dentro do tempo máximo de desenvolvimento por projeto, não conter
+			dados estritamente confidenciais, gerar um valor que valha o investimento). Priorizar a ordem de execução das tarefas.
+			\item Saídas: Lista com os projetos selecionados e priorizados para execução.
+		\end{itemize}
+		\item \textbf{Retorno para o cliente e sugestões de outros times/recursos para a execução do projeto}
+		\begin{itemize}
+			\item Descrição: Quando um projeto é definido como fora de escopo, é marcada uma reunião com o requisitante e apresentado 
+			os motivos da decisão. A depender do motivos são passadas orientações para a área cliente, como procurar outro time de desenvolvimento interno na empresa,
+			utilizar uma ferramenta existente no mercado, contratar time externo para executar o projeto, ou mesmo redefinir os requisitos e necessidades e submeter novamente para análise.
+			Essa etapa é um dos possíveis fins do fluxo de serviço.
+			\item Objetivos: Apresentar uma devolutiva ao requisitante da demanda. Orientar sobre possíveis alternativas.
+			\item Saídas: Ata da reunião com principais tópicos, decisões, e participantes.
+		\end{itemize}
+		\item \textbf{Apresentação da linha do tempo do projeto para o cliente}
+		\begin{itemize}
+			\item Descrição: Quando um projeto é definido como dentro do escopo e priorizado, é marcada uma reunião com o requisitante
+			para dar um retorno sobre essa priorização. O gerente de projetos apresenta como ficou a linha do tempo estimada para os diferentes cenários e quando será
+			iniciado o desenvolvimento.
+			\item Objetivos: Apresentar o cronograma e início do desenvolvimento. Definição de qual cenário será desenvolvido. Coletar possíveis ressalvas quanto aos prazos informados.
+			Definir agendas para acompanhamento do progresso do desenvolvimento.
+			\item Saídas: Ata da reunião com principais tópicos, decisões, e participantes. Agenda com as reuniões de acompanhamento.
+		\end{itemize}
+		\item \textbf{Desenvolvimento da solução}
+		\begin{itemize}
+			\item Descrição: Esta é a etapa dedicada ao trabalho de desenvolvimento de programação da solução proposta e escolhida. A partir das histórias de usuário
+			criadas anteriormente, semanalmente são criadas taferas detalhando as atividades a serem realizadas na próxima semana para cada história de usuário.
+			\item Objetivos: Detalhar as histórias de usuário em tarefas. Executar as tarefas de cada história de usuário.
+			\item Saídas: Solução desenvolvida com todas as suas fucionalidades.
+		\end{itemize}
+		\item \textbf{Teste e homologação}
+		\begin{itemize}
+			\item Descrição: Ao ser finalizado o desenvolvimento da solução é realizada um demonstração ao requisitante e às partes interessadas.
+			A solução é implantada no ambiente de qualidade para que os usuários façam testes e validem se as funcionalidades e requisitos foram cumpridos.
+			Em paralelo o time de desenvolvimento trabalha para corrigir problemas encontrados.
+			\item Objetivos: Usuários validarem a solução proposta. Corrigir possíveis problemas encontrados. Definir uma data para fim dos testes em qualidade. 
+			\item Saídas: Relatório de problemas encontrados na ferramenta. Relatório com possíveis melhorias futuras. Relatório com as correções realizadas.
+		\end{itemize}
+		\item \textbf{Entrega única ou suporte e melhorias}
+		\begin{itemize}
+			\item Descrição: Nessa etapa se inicia o encerramento do projeto. É realizada uma reunião com o requisitante e as partes interessadas, onde discute-se
+			sobre como foi o andamento do projeto e são explicadas as opções de continuidade para a área cliente demandante. Onde existem as opções de contratarem 
+			um plano de suporte e melhorias com o time de desenvolvimento ou seguirem por conta própria com a solução desenvolvida. 
+			\item Objetivos: Formalizar a entrega da solução desenvolvida. Apresentar com mais detalhes as opções de continuidade. Estipular um prazo para retorno sobre qual será a opção escolhida, caso não seja decidido na reunião.
+			\item Saídas: E-mail com a formalização da entrega. Prazo para decisão dos próximos passos.
+		\end{itemize}
+		\item \textbf{Envio do pacote da solução e entrega da documentação}
+		\begin{itemize}
+			\item Descrição: Caso o requisitante e sua área decidam por não contratar o pacote de suporte e melhorias, são enviadas por e-mail as intruções de como dar continuidade à operação da solução, bem como o pacote contendo a própria solução desenvolvida. Espera-se um atestado de recebimento or parte do requisitante.
+			\item Objetivos: Enviar documentação fucional da solução desenvolvida. Enviar pacote com a solução desenvolvida.
+			\item Saídas: E-mail com os documentos de entrega do projeto. Atestado de recebimento dos arquivos, que simboliza o encerramento do projeto.
+		\end{itemize}
+		\item \textbf{Define acordo de suporte e melhorias}
+		\begin{itemize}
+			\item Descrição: Ao optar por seguir com o pacote de suporte e melhorias, são definidas as horas mensais dedicadas e valor a ser pago para esse pacote. Além disso, é demonstrado como são abertas requisições de suporte e melhorias.
+			\item Objetivos: Definir horas e custos mensais do pacote se suporte e melhorias. Obter autorização para débito no centro de custo da área cliente.
+			\item Saídas: E-mail com acordo de suporte e melhorias.
+		\end{itemize}
+		\item \textbf{Aplicação entra em produção e na rotina de manutenção e suporte}
+		\begin{itemize}
+			\item Descrição: A aplicação é implantada no ambiente produtivo e liberada para operação aos usuários.
+			\item Objetivos: Implantar a solução em produção. Encerrar o projeto de desenvolvimento. Iniciar suporte e manutenção da solução.
+			\item Saídas: E-mail com intruções de acesso e utilização da ferramenta. E-mail com as instruções para criação de requisições de suporte.
+		\end{itemize}
+	\end{itemize}
+
+	Para as áreas que não optaram por seguir com um acordo de suporte e melhorias, caso seja necessário uma nova implementação ou modificação relacionada à soluçao desenvolvida, deverão responder novamente o formulário e passar por todo o processo de análise de retorno por investimento e priorização, como uma nova demanda.
+	Já as que tem o acordo de suporte e melhorias, podem utilizar as horas mensais e fazer o balanceamento das mesmas para realizar essas implementações sem passar por todo o processo. Entretanto, mesmo com o acordo, caso seja uma modificação muito grande ou uma nova funcionalidade que demande muito tempo de desenvolvimento, é necessário responder o formulário e iniciar como uma nova demanda ao time, porém ao fim não precisam de um novo acordo de suporte e melhorias, pois já o possuem.
+
+	\section{Arquitetura do Sistema}
+
+	Na figura \ref{fig:metodologia:arquiteturaFisica} pode ser observada um padrão de arquitetura física para os sistemas desenvolvidos. Ela contém todos os possíveis
+	elementos do sistema que podem ser utilizados para a arquitetura final de cada projeto executado. 
+	\begin{figure}[h]
+		\centering
+		% \includegraphics[width=1\textwidth]{./figuras/lcurve.eps}
+		\includegraphics[width=1\textwidth]{./figuras/arquiteturaFisica.pdf}
+		\caption{Padrão de arquitetura física dos sistemas desenvolvidos.}
+		\label{fig:metodologia:arquiteturaFisica}
+	\end{figure}
+
+	Já na figura \ref{fig:metodologia:arquiteturaFuncional} temos o padrão de arquitetura funcional para os sistemas desenvolvidos, e mais uma vez, contém todas as possibilidades
+	de funções disponíveis e que podem ser implementadas no sistema de interesse.
+	\begin{figure}[H]
+		\centering
+		% \includegraphics[width=1\textwidth]{./figuras/scattering.eps}
+		\includegraphics[width=1\textwidth]{./figuras/arquiteturaFuncional.pdf}
+		\caption{Padrão de arquitetura funcional dos sistemas desenvolvidos.}
+		\label{fig:metodologia:arquiteturaFuncional}
+	\end{figure}
+
+
 	\section{Instrumentos e Materiais}
 
 	A documentação do ciclo de vida atual do sistema de serviço será feita a partir do desenvolvimento de diagrams que representarão os estágios e etapas do ciclo de vida do serviço prestado. Nelas serão destacas as saídas e entradas. O diagrama será confeccionado na ferramenta online \textit{Draw.io}, 
@@ -71,24 +217,4 @@ evoluções ou prosseguimento do trabalho.
 
 	A aplicação será desenvolvida com as ferramentas e recursos disponíveis na \textit{Power Platform}. Para a interface de usuário será utilizado o \textit{Power Apps}, para automações assíncronas e integrações com sistemas externos será utilizado o \textit{Power Automate}, para a criação do banco de dados será utilizado o \textit{Dataverse}, que suporta bancos relacionais, e para envios de notificações é utilizado o \textit{Outlook}.
 
-	\section{Arquitetura do Sistema}
-
-	Na figura \ref{fig:metodologia:arquiteturaFisica} pode ser observada um padrão de arquitetura física para os sistemas desenvolvidos. Ela contém todos os possíveis
-	elementos do sistema que podem ser utilizados para a arquitetura final de cada projeto executado. 
-	\begin{figure}[h]
-		\centering
-		% \includegraphics[width=1\textwidth]{./figuras/lcurve.eps}
-		\includegraphics[width=1\textwidth]{./figuras/arquiteturaFisica.pdf}
-		\caption{Padrão de arquitetura física dos sistemas desenvolvidos.}
-		\label{fig:metodologia:arquiteturaFisica}
-	\end{figure}
-
-	Já na figura \ref{fig:metodologia:arquiteturaFuncional} temos o padrão de arquitetura funcional para os sistemas desenvolvidos, e mais uma vez, contém todas as possibilidades
-	de funções disponíveis e que podem ser implementadas no sistema de interesse.
-	\begin{figure}[h]
-		\centering
-		% \includegraphics[width=1\textwidth]{./figuras/scattering.eps}
-		\includegraphics[width=1\textwidth]{./figuras/arquiteturaFuncional.pdf}
-		\caption{Padrão de arquitetura funcional dos sistemas desenvolvidos.}
-		\label{fig:metodologia:arquiteturaFuncional}
-	\end{figure}
+	

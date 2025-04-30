@@ -25,30 +25,9 @@
 		\item Estágio de produção: nesse estágio o projeto base definido no estágio anterior sai do papel e dá lugar ao sistema de fato, que será testado e qualificado para ser colocado para utilização.
 		\item Estágio de utilização: o início desse estágio se dá com a liberação do sistema ou parte dele para uso, incluindo os sistemas de apoio que são necessários para certas funcionalidades. Esse estágio comumente é o mais longo do ciclo de vida e é comum que mudanças e melhorias no SoI ocorram ao longo da utilização, lembrando sempre de fazer o gerenciamento dos riscos e documentação para garantir a integridade e manutenção do SoI.
 		\item Estágio de suporte: segue paralelo ao estágio de utilização assim que alguma funcionalidade se torna disponível, no entanto o preparo e planejamento desse estágio pode ser iniciado antes como a aquisição de sobresalentes. Nesse estágio que são percebidas as melhorias e mudanças que podem vir a ser implementadas durante a utilização.
-		\item Este estágio ocorre quando o sistema é retirado de operação, marcando o fim dos estágios de utilização e produção, ou, no máximo, havendo uma pequena sobreposição entre eles. Além de definir como será realizado o descarte físico ou virtual dos componentes do sistema, essa etapa também envolve a análise da possível extensão da vida útil de algumas partes do sistema e o arquivamento de documentos importantes relacionados a ele. É uma fase crucial para garantir o encerramento adequado do ciclo de vida do sistema.
+		\item Estágio de descontinuação: ocorre quando o sistema é retirado de operação, marcando o fim dos estágios de utilização e produção, ou, no máximo, havendo uma pequena sobreposição entre eles. Além de definir como será realizado o descarte físico ou virtual dos componentes do sistema, essa etapa também envolve a análise da possível extensão da vida útil de algumas partes do sistema e o arquivamento de documentos importantes relacionados a ele. É uma fase crucial para garantir o encerramento adequado do ciclo de vida do sistema.
 	\end{itemize}
-
-	% O estágio de conceito: reprenta a parte exploratória de pesquisas e origens do reconheimento de uma necessidade, ou uma nova missão, ou uma nova capacidade de negócio, ou ainda a alteração de algum desses itens. Nesse estágio são explorados todos os fatores do sistema, desde mercado, ambientais, econômicos, recursos disponíveis e escopo de atuação, de forma que sejam definidos os limites do prolema a ser resolvido, as missões do sistema, onde ele será utilizado e seja feita uma análise do negócio, da missão e dos valores entregues. Para que o problema seja bem definido, são realizados os levantamentos dos requisito do sistema, das partes interessadas envolvidas e suas necessidades, e do espaço de solução, e assim pode ser derivado um custo inicial do esforço a ser empenhado e uma agenda prévia, que servem de base para o ciclo de vida. Algumas saídas ou resultados típicos desse estágio são documentos preliminares da arquitetura sistema, da viabilidade, dos requisitos, do design e novamente da agenda e esforço. Esse estágio é de extrema importância pois aqui o sistema é definido, mudanças podem surgir depois, mas representarão uma maior dificuldade de implementação devido a diversos fatores, como tempo ou custo. 
-
-	% O estágio de desenvolvimento: nesse estágio é definido um SoI que atende e vai de encontro com as necessidades e requisitos das partes interessadas, e que pode ser
-	% produzido, utilizado, suportado e descontinuado caso necessário. O objetivo principal dessa fase é definir um projeto base de engenharia que pode ser executado, sem buscar a 
-	% perfeição, mas atendendo às partes interessadas e respeitando os possíveis ``trade-offs'' previamente definidos nesse mesmo estágio. Nesse projeto base devem estar os
-	% requisitos, arquitetura, modelagens, documentação e planejamento para próximas fases que também podem ser vistos como saídas dessa fazer.
-
-	% O estágio de produção: nesse estágio o projeto base definido no estágio anterior sai do papel e dá lugar ao sistema de fato, que será testado e qualificado para ser
-	% colocado para utilização.
-
-	% O estágio de utilização: o início desse estágio se dá com a liberação do sistema ou parte dele para uso, incluindo os sistemas de apoio que são necessários para certas
-	% funcionalidades. Esse estágio comumente é o mais longo do ciclo de vida e é comum que mudanças e melhorias no SoI ocorram ao longo da utilização, lembrando sempre de fazer
-	% o gerenciamento dos riscos e documentação para garantir a integridade e manutenção do SoI.
-
-	% O estágio de suporte: segue paralelo ao estágio de utilização assim que alguma funcionalidade se torna disponível, no entanto o preparo e planejamento desse estágio pode 
-	% ser iniciado antes como a aquisição de sobresalentes. Nesse estágio que são percebidas as melhorias e mudanças que podem vir a ser implementadas durante a utilização.
-
-	% O estágio de descontinuação: acontece quando o sistema sai de operação e normalmente seu início dá fim aos estágios de utilização e produção, ou no máximo existe uma pequena
-	% sobreposição entre estes. Além de definir como será feito o descarte físico ou virtual das partes é nessa etapa que é feita um possivel análise de extensão de vida útil de parte do Sistema
-	% e o arquivamento de documentos importantes sobre o mesmo.
-
+	
 	Ainda no \cite{incoseHandbook}, são trazidos conceitos importante sobre os \textit{decision gates} que coexistem entre os estágio dos ciclo de vida, tanto no início quanto no fim de cada estágio.
 	Dentre os objetivos dos \textit{decision gates} estão o acompanhamento da evolução da maturidade do sistema, a conferência dos critérios de saída ou entrada de um estágio,
 	a análise de risco mediante à situação atual do sistema, e por fim uma tomada de decisão sobre o que será feito. Podendo haver um regresso no ciclo de vida, um avanço, uma pausa 
@@ -78,6 +57,125 @@
 
 	Durante a execução dos estágios do ciclo de vida várias tarefas são executadas, e para isso alguns processos precisam ser realizados para garantir a consistência das atividades. Um conjunto
 	de processos é definido no livro e a execução de cada um deles varia de acordo com os estágios existentes no ciclo de vida do sistema.
+
+	Em \cite{kossiakoff2020systems} os autores fazem uma quebra dos estágios de conceito e desenvolvimento citados anteriomente, subdividindo-os em três fases cada. Dessa maneira a análise do ciclo de vida
+	de um sistemas, bem como a sua estruturação fica mais clara e objetiva.
+	Para o estágio de conceito temos as fases mostradas na figura \ref{fig:revisao:conceptStagePhases}, \cite{kossiakoff2020systems} as descreve da segunte maneira:
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth]{./figuras/conceptPhases.pdf}
+		\caption{Fases do estágio de Conceito, adaptado de \cite{kossiakoff2020systems}}
+		\label{fig:revisao:conceptStagePhases}
+	\end{figure}
+
+	\subsubsection*{Fase de análise de necessidade}
+	 
+	A fase de análise de necessidades tem como objetivo identificar se há, de fato, uma necessidade legítima para o desenvolvimento de um novo sistema, bem como 
+	avaliar se existe uma abordagem viável para atendê-la. Essa etapa exige uma análise crítica das limitações dos meios existentes em
+	suprir as demandas atuais ou futuras previstas. Também é considerada a viabilidade técnica, ou seja, se a tecnologia disponível é capaz de suportar a 
+	capacidade adicional desejada.
+	
+	Frequentemente, o início do ciclo de vida de um sistema não se dá de forma repentina, mas sim como resultado de uma análise contínua das necessidades 
+	operacionais ou do desenvolvimento de produtos inovadores. O principal resultado dessa fase é a descrição das capacidades e da efetividade operacional 
+	esperadas do novo sistema. Embora ainda não configure um conjunto formal de requisitos, essa 
+	descrição serve como base para sua futura definição.
+		
+	Para apoiar essa fase, são utilizados diversos métodos e ferramentas, especialmente as áreas da análise operacional e da pesquisa operacional. Além disso, 
+	avaliações tecnológicas e experimentações complementam essas abordagens matemáticas, contribuindo para uma definição mais precisa das necessidades do sistema.
+
+	\subsubsection*{Fase de exploração de conceito}
+
+	Na fase de exploração de conceitos, busca-se responder às seguintes questões: “Qual desempenho o novo sistema precisa atingir para satisfazer a necessidade 
+	identificada?” e “Existe pelo menos uma abordagem viável para alcançar esse desempenho a um custo aceitável?” A resposta positiva a essas perguntas é essencial 
+	para estabelecer objetivos realistas e viáveis antes de investir fortemente no desenvolvimento do sistema.
+
+	O principal resultado desta fase é a formulação do primeiro conjunto de requisitos de desempenho do sistema, considerados “oficiais” por serem passíveis de 
+	medição e avaliação por parte de contratantes ou agências. Além disso, são gerados os conceitos candidatos de sistema — ou seja, múltiplas alternativas de 
+	solução. A exploração de diferentes abordagens é fundamental para compreender as possibilidades disponíveis para atender à necessidade identificada.
+
+	Diversas ferramentas e técnicas são utilizadas nessa etapa, incluindo métodos de processo (como análise de requisitos) e julgamento especializado 
+	(como sessões de brainstorming). Inicialmente, o número de conceitos pode ser elevado, mas o processo visa reduzi-los 
+	rapidamente a um conjunto manejável. A viabilidade das alternativas finais precisa ser comprovada, pois elas serão a base para as decisões da próxima fase do 
+	ciclo de vida.
+	
+	\subsubsection*{Fase de definição de conceito}
+
+	A fase de definição de conceito tem como foco selecionar o conceito de sistema mais promissor, ou seja, aquele que apresenta o melhor equilíbrio entre 
+	capacidade, vida útil operacional e custo. Para isso, diferentes alternativas devem ser comparadas em relação ao desempenho, utilidade operacional, riscos 
+	de desenvolvimento e custos. Com base nessa análise, é decidido se vale a pena investir recursos significativos no desenvolvimento do novo sistema.
+
+	O principal resultado dessa fase é uma descrição funcional clara do que o sistema deve fazer e qual desempenho deve alcançar, além da definição do conceito 
+	selecionado de sistema. Em sistemas simples, essa descrição pode ser feita de forma direta; em sistemas mais complexos, é necessária uma arquitetura de sistema 
+	mais detalhada, que represente o sistema sob diferentes perspectivas — principalmente funcional e física.
+
+	As ferramentas utilizadas nesse estágio incluem análise de alternativas e práticas de arquitetura de sistemas. Em contextos comerciais, as 
+	fases anteriores são frequentemente integradas em um estudo de viabilidade, que serve como base para decidir se o conceito deve ser desenvolvido.
+
+	Mesmo que já tenham sido dedicados esforços significativos na compreensão do ambiente operacional e das tecnologias relacionadas, até este ponto o 
+	investimento direto no desenvolvimento do sistema costuma ser limitado. É nas fases seguintes que a maior parte dos recursos será aplicada, com foco no 
+	desenvolvimento técnico e implementação.
+
+	Olhando agora para o estágio de desnvolvimento vemos na figura \ref{fig:revisao:developmentStagePhases} suas fases e entradas e saídas. Novamente suas definições segundo \cite{kossiakoff2020systems} encontram-se abaixo:
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth]{./figuras/developmentPhases.pdf}
+		\caption{Fases do estágio de Desenvolvimento, adaptado de \cite{kossiakoff2020systems}}
+		\label{fig:revisao:developmentStagePhases}
+	\end{figure}
+
+	\subsubsection*{Fase de desenvolvimento avançado}
+	A fase de desenvolvimento avançado marca a transição entre a definição conceitual e o início do desenvolvimento técnico de um sistema. Seu sucesso depende 
+	fortemente da solidez das decisões tomadas nas fases conceituais anteriores. No entanto, como essas fases iniciais geralmente envolvem análises com recursos 
+	limitados, ainda restam incertezas importantes que precisam ser identificadas e resolvidas o quanto antes. Esta fase tem como principal objetivo minimizar 
+	esses riscos e transformar os requisitos funcionais do sistema em especificações técnicas mais detalhadas.
+
+	Duas finalidades centrais definem esta fase: a identificação e mitigação de riscos de desenvolvimento, e a produção das especificações de design do sistema. 
+	Isso é particularmente crítico em projetos que envolvem tecnologias inovadoras ou desempenho que extrapola os limites previamente testados. A fase 
+	concentra-se no desenvolvimento e validação das partes do sistema que ainda não estão consolidadas, assegurando que seus requisitos possam de fato ser 
+	atendidos.
+
+	Nesta etapa, a ES desempenha papel essencial ao definir o que precisa ser validado, como isso será feito e como interpretar os resultados 
+	obtidos. Frequentemente, modelos experimentais e simulações são empregados para validar conceitos de projeto de componentes e subsistemas, reduzindo os custos 
+	de desenvolvimento.
+
+	O produto final desta fase é um modelo de desenvolvimento validado, junto a um conjunto refinado de especificações de projeto. Esse modelo deve demonstrar que
+	o sistema pode ser projetado e fabricado de forma viável e com riscos aceitáveis. Por isso, todos os riscos precisam estar classificados como controláveis 
+	antes que o projeto avance para a próxima fase do ciclo de vida.
+
+	\subsubsection*{Fase de projeto de engenharia}
+
+	A fase de projeto de engenharia representa a transição entre a definição conceitual e a concretização técnica do sistema. É nesta etapa que o projeto detalhado 
+	dos componentes é desenvolvido, resultando na criação de um protótipo funcional ou virtual do sistema. Devido à sua complexidade e escopo, essa fase é geralmente
+	marcada por revisões formais de projeto, que permitem ao cliente acompanhar o progresso, controlar custos, revisar o cronograma e fornecer feedback essencial 
+	aos desenvolvedores.
+
+	Embora aspectos como confiabilidade, manutenibilidade e fabricabilidade – conhecidos como "Engenharia especializada" – já tenham sido considerados anteriormente, 
+	nesta fase eles assumem um papel central. O engenheiro de sistemas tem a responsabilidade de garantir que cada componente implementa corretamente os requisitos 
+	funcionais e de compatibilidade, além de coordenar o processo de mudanças de engenharia para manter o controle das interfaces e da configuração do sistema.
+
+	As principais atividades dessa etapa incluem a conversão das especificações de componentes em projetos de engenharia completos, além da execução de testes 
+	preliminares. Esses testes podem ser realizados imediatamente após o projeto ou paralelamente a ele. Outro elemento crucial é o refinamento do plano de testes e 
+	avaliações (T\&A), iniciado em fases anteriores, mas consolidado com base nas decisões e dados acumulados até aqui.
+
+	Os dois principais produtos desta fase são o plano de T\&A e um protótipo do sistema. Este protótipo pode assumir diferentes formas — física, virtual ou híbrida — 
+	dependendo da natureza do sistema em questão. Por exemplo, no caso de sistemas complexos e de grande escala, como embarcações de carga, o protótipo pode combinar
+	simulações digitais e modelos físicos em escala reduzida.
+
+	Ferramentas modernas de projeto assistido por computador (CAD) e simulações de sistemas são amplamente utilizadas para apoiar as decisões de engenharia, 
+	garantindo que o sistema projetado seja viável, testável e alinhado com os objetivos operacionais definidos nas fases iniciais do ciclo de vida.
+
+	\subsubsection*{Fase de integração e avaliação}
+	A fase de integração e avaliação marca o momento em que os componentes projetados e desenvolvidos são reunidos para formar um sistema funcional completo. Embora ainda seja parte do processo de desenvolvimento, essa etapa possui características distintas, especialmente no que diz respeito ao papel da engenharia de sistemas, justificando seu tratamento como uma fase separada no ciclo de vida do sistema.
+
+É nessa etapa que o sistema é montado e testado pela primeira vez em um ambiente realista ou simulado. Isso permite verificar se as interfaces entre os componentes estão compatíveis e se a integração geral atende aos requisitos funcionais estabelecidos. Apesar de testes prévios em subsistemas ou protótipos terem sido realizados, somente agora é possível validar a integridade do sistema como um todo.
+
+Frequentemente, a execução dessa fase exige a construção de instalações específicas capazes de simular estímulos operacionais e restrições reais, de modo a permitir uma avaliação precisa do desempenho do sistema. A complexidade e os recursos necessários para essa infraestrutura não devem ser subestimados.
+
+Os principais resultados da fase de integração e avaliação são: (i) as especificações finais de produção do sistema, conhecidas como "baseline de produção", que orientam a fabricação do produto final, e (ii) o sistema de produção propriamente dito, que inclui tudo o que é necessário para manufaturar e montar o sistema em escala.
+
+Ferramentas modernas de integração, T\&A, bem como métodos e princípios atualizados, estão disponíveis para apoiar os engenheiros nesse processo. Antes que a produção em larga escala possa começar, é essencial que o sistema final seja verificado e validado em um ambiente operacional real ou em uma simulação que represente fielmente esse contexto.
 	
 	\section{Arquitetura do Sistema}\label{sec:revisao:arqSistema}
 
@@ -90,7 +188,7 @@
 	sistema e são reutilizáveis para diferentes tipos cenários. O uso de \textit{Padrões de Arquitetura} agiliza  a documentação, facilita a comunicação, promove o reúso, melhora a produtividade
 	e eficiência e serve como um ponto de início para o desenvolvimento de novos sistemas.
 
-	Como o conceito de arquitetura pode ser muito abrangente, o SEBoK \citep{sebok2024} mostra três segmentações de arquitetura, a arquitetura funcional,	lógica e a física.
+	Como o conceito de arquitetura pode ser muito abrangente, o SEBoK \citep{sebok2024} mostra três segmentações de arquitetura, a arquitetura funcional, lógica e a física.
 
 	A arquitetura funcional compreende as funcionalidades do sistema, ou seja, quais funções ou comportamentos aquele sistema executa ou possui em diferentes contextos para atingir os objetivos
 	esperados.

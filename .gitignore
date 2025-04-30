@@ -12,7 +12,6 @@
 *.synctex(busy)
 *.toc
 *.bcf
-figuras/*.pdf
 figuras/annex/**/**/*.pdf
 figuras/benchmark/*.pdf
 figuras/casestudy/**/*.pdf
