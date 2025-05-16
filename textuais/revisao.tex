@@ -17,15 +17,27 @@
 	Em alguns casos, o Sistema de Interesse (SoI, do inglês \textit{System of Interest}) faz parte de um Sistema de Sistemas (SoS, do inglês \textit{System of Systems}). Nesse contexto, cada um possui seu próprio ciclo de vida. Geralmente, em um SoS, cada elemento do sistema tem seu ciclo de vida independente, e o ciclo de vida do SoS influencia diretamente o do SoI. Por isso, ao analisar o ciclo de vida do SoI, é essencial considerar a evolução e as interações com o SoS.
 
 	O ciclo de vida genérico trazido no \cite{incoseHandbook} nos mostra os seis estágios básicos existentes numa estruturação em ``V'' que busca mostrar de forma visual a aparição desses estágios
-	ao longo do tempo, realçando também o possível paralelismo entre eles. Os estágios são de: conceito, desenvolvimento, produção, utilização, suporte e descontinuação. Na figura \ref{} podemos ver uma representação do que foi mostrado no livro. {\color{red} Você pode pegar a imagem do V lá o SEBoK se não der certo com o Handbook.} A seguir cada estágio será abordado:
+	ao longo do tempo, realçando também o possível paralelismo entre eles. Os estágios são de: conceito, desenvolvimento, produção, utilização, suporte e descontinuação. Na figura \ref{fig:revisao:veeLifeCycle} podemos ver uma representação do que foi mostrado no livro. A seguir cada estágio será abordado:
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\textwidth]{./figuras/veeLifeCycle.pdf}
+		\caption{Ciclo de vida com estrutura em ``V''.}
+		\label{fig:revisao:veeLifeCycle}
+	\end{figure}
 
 	\begin{itemize}
 		\item Estágio de conceito: Este estágio representa a fase exploratória, onde são identificadas as origens de uma necessidade, uma nova missão, uma nova capacidade de negócio ou a alteração de algum desses elementos. Nele, são analisados diversos fatores do sistema, como mercado, aspectos ambientais, condições econômicas, recursos disponíveis e escopo de atuação. O objetivo é definir os limites do problema a ser resolvido, as missões do sistema, onde ele será aplicado e realizar uma análise do negócio, da missão e dos valores que serão entregues. Para garantir uma definição clara do problema, são realizados levantamentos dos requisitos do sistema, das partes interessadas envolvidas e de suas necessidades, além da exploração do espaço de soluções possíveis. Com base nisso, é possível estimar um custo inicial do esforço necessário e criar uma agenda preliminar, que servirá como base para o ciclo de vida do sistema. Alguns dos resultados típicos desse estágio incluem documentos preliminares da arquitetura do sistema, análise de viabilidade, requisitos, design, agenda e estimativa de esforço. Esse estágio é crucial, pois é nele que o sistema é definido. Embora mudanças possam ocorrer posteriormente, sua implementação tende a ser mais complexa e custosa devido a fatores como tempo e recursos adicionais necessários.
 		\item Estágio de desenvolvimento: nesse estágio é definido um SoI que atende e vai de encontro com as necessidades e requisitos das partes interessadas, e que pode ser produzido, utilizado, suportado e descontinuado caso necessário. O objetivo principal dessa fase é definir um projeto base de engenharia que pode ser executado, sem buscar a perfeição, mas atendendo às partes interessadas e respeitando os possíveis ``trade-offs'' previamente definidos nesse mesmo estágio. Nesse projeto base devem estar os requisitos, arquitetura, modelagens, documentação e planejamento para próximas fases que também podem ser vistos como saídas dessa fazer.
-		\item Estágio de produção: nesse estágio o projeto base definido no estágio anterior sai do papel e dá lugar ao sistema de fato, que será testado e qualificado para ser colocado para utilização.
+		\item Estágio de produção: nesse estágio o projeto base definido no estágio de desenvolvimento, é aprovado e qualificado para ser colocado para utilização. Esse estágio simboliza o período de instalação, implementação ou transição para um ambiente de fato produtivo.
 		\item Estágio de utilização: o início desse estágio se dá com a liberação do sistema ou parte dele para uso, incluindo os sistemas de apoio que são necessários para certas funcionalidades. Esse estágio comumente é o mais longo do ciclo de vida e é comum que mudanças e melhorias no SoI ocorram ao longo da utilização, lembrando sempre de fazer o gerenciamento dos riscos e documentação para garantir a integridade e manutenção do SoI.
-		\item Estágio de suporte: segue paralelo ao estágio de utilização assim que alguma funcionalidade se torna disponível, no entanto o preparo e planejamento desse estágio pode ser iniciado antes como a aquisição de sobresalentes. Nesse estágio que são percebidas as melhorias e mudanças que podem vir a ser implementadas durante a utilização.
-		\item Estágio de descontinuação: ocorre quando o sistema é retirado de operação, marcando o fim dos estágios de utilização e produção, ou, no máximo, havendo uma pequena sobreposição entre eles. Além de definir como será realizado o descarte físico ou virtual dos componentes do sistema, essa etapa também envolve a análise da possível extensão da vida útil de algumas partes do sistema e o arquivamento de documentos importantes relacionados a ele. É uma fase crucial para garantir o encerramento adequado do ciclo de vida do sistema.
+		\item Estágio de suporte: segue paralelo ao estágio de utilização assim que alguma funcionalidade se torna disponível, no entanto o preparo e 
+		planejamento desse estágio pode ser iniciado antes como a aquisição de sobresalentes. Nesse estágio que são percebidas as melhorias e mudanças que 
+		podem vir a ser implementadas durante a utilização.
+		\item Estágio de descontinuação: ocorre quando o sistema é retirado de operação, marcando o fim dos estágios de utilização e produção, ou, no máximo, 
+		havendo uma pequena sobreposição entre eles. Além de definir como será realizado o descarte ou armazenamento físico ou virtual dos componentes do sistema, essa etapa 
+		também envolve a análise da possível extensão da vida útil de algumas partes do sistema e o arquivamento de documentos importantes relacionados a ele.
+		É uma fase crucial para garantir o encerramento adequado do ciclo de vida do sistema.
 	\end{itemize}
 	
 	Ainda no \cite{incoseHandbook}, são trazidos conceitos importante sobre os \textit{decision gates} que coexistem entre os estágio dos ciclo de vida, tanto no início quanto no fim de cada estágio.
@@ -45,7 +57,7 @@
 		\caption{Características das abordagens de um ciclo de vida}
 		\begin{tabular}{cccc}
 			\hline
-			Abordadem & Requisitos definidos no ínicio & Iterações planejadas & Múltiplas instalações \\
+			Abordagem & Requisitos definidos no ínicio & Iterações planejadas & Múltiplas instalações \\
 			\hline
 			Sequencial & Todos os requisitos & Apenas uma & Não\\
 			Incremental & Todos os requisitos & Múltiplas & Potencialemnte\\
@@ -58,14 +70,16 @@
 	Durante a execução dos estágios do ciclo de vida várias tarefas são executadas, e para isso alguns processos precisam ser realizados para garantir a consistência das atividades. Um conjunto
 	de processos é definido no livro e a execução de cada um deles varia de acordo com os estágios existentes no ciclo de vida do sistema.
 
-	Em \cite{kossiakoff2020systems} os autores fazem uma quebra dos estágios de conceito e desenvolvimento citados anteriomente, subdividindo-os em três fases cada. Dessa maneira a análise do ciclo de vida
+	\subsection{Fases dos estágios de Conceito e Desenvolvimento}\label{sec:revisao:ciclodevida:fases}
+
+	\cite{kossiakoff2020systems} fazem uma quebra dos estágios de conceito e desenvolvimento citados anteriomente, subdividindo-os em três fases cada. Dessa maneira a análise do ciclo de vida
 	de um sistemas, bem como a sua estruturação fica mais clara e objetiva.
 	Para o estágio de conceito temos as fases mostradas na figura \ref{fig:revisao:conceptStagePhases}, \cite{kossiakoff2020systems} as descreve da segunte maneira:
 	
-	\begin{figure}[H]
+	\begin{figure}[h]
 		\centering
 		\includegraphics[width=\textwidth]{./figuras/conceptPhases.pdf}
-		\caption{Fases do estágio de Conceito, adaptado de \cite{kossiakoff2020systems}}
+		\caption{Fases do estágio de Conceito, adaptado de \citep{kossiakoff2020systems}}
 		\label{fig:revisao:conceptStagePhases}
 	\end{figure}
 
@@ -116,12 +130,12 @@
 	investimento direto no desenvolvimento do sistema costuma ser limitado. É nas fases seguintes que a maior parte dos recursos será aplicada, com foco no 
 	desenvolvimento técnico e implementação.
 
-	Olhando agora para o estágio de desnvolvimento vemos na figura \ref{fig:revisao:developmentStagePhases} suas fases e entradas e saídas. Novamente suas definições segundo \cite{kossiakoff2020systems} encontram-se abaixo:
+	Olhando agora para o estágio de desenvolvimento vemos na figura \ref{fig:revisao:developmentStagePhases} suas fases e entradas e saídas. Novamente suas definições segundo \cite{kossiakoff2020systems} encontram-se abaixo:
 
-	\begin{figure}[H]
+	\begin{figure}[h]
 		\centering
 		\includegraphics[width=\textwidth]{./figuras/developmentPhases.pdf}
-		\caption{Fases do estágio de Desenvolvimento, adaptado de \cite{kossiakoff2020systems}}
+		\caption{Fases do estágio de Desenvolvimento, adaptado de \citep{kossiakoff2020systems}}
 		\label{fig:revisao:developmentStagePhases}
 	\end{figure}
 
@@ -167,15 +181,58 @@
 	garantindo que o sistema projetado seja viável, testável e alinhado com os objetivos operacionais definidos nas fases iniciais do ciclo de vida.
 
 	\subsubsection*{Fase de integração e avaliação}
-	A fase de integração e avaliação marca o momento em que os componentes projetados e desenvolvidos são reunidos para formar um sistema funcional completo. Embora ainda seja parte do processo de desenvolvimento, essa etapa possui características distintas, especialmente no que diz respeito ao papel da engenharia de sistemas, justificando seu tratamento como uma fase separada no ciclo de vida do sistema.
+	A fase de integração e avaliação marca o momento em que os componentes projetados e desenvolvidos são reunidos para formar um sistema funcional completo. 
+	Embora ainda seja parte do processo de desenvolvimento, essa etapa possui características distintas, especialmente no que diz respeito ao papel da ES, 
+	justificando seu tratamento como uma fase separada no ciclo de vida do sistema.
 
-É nessa etapa que o sistema é montado e testado pela primeira vez em um ambiente realista ou simulado. Isso permite verificar se as interfaces entre os componentes estão compatíveis e se a integração geral atende aos requisitos funcionais estabelecidos. Apesar de testes prévios em subsistemas ou protótipos terem sido realizados, somente agora é possível validar a integridade do sistema como um todo.
+	É nessa etapa que o sistema é montado e testado pela primeira vez em um ambiente realista ou simulado. Isso permite verificar se as interfaces entre os 
+	componentes estão compatíveis e se a integração geral atende aos requisitos funcionais estabelecidos. Apesar de testes prévios em subsistemas ou protótipos 
+	terem sido realizados, somente agora é possível validar a integridade do sistema como um todo.
 
-Frequentemente, a execução dessa fase exige a construção de instalações específicas capazes de simular estímulos operacionais e restrições reais, de modo a permitir uma avaliação precisa do desempenho do sistema. A complexidade e os recursos necessários para essa infraestrutura não devem ser subestimados.
+	Frequentemente, a execução dessa fase exige a construção de instalações específicas capazes de simular estímulos operacionais e restrições reais, de modo a 
+	permitir uma avaliação precisa do desempenho do sistema. A complexidade e os recursos necessários para essa infraestrutura não devem ser subestimados.
 
-Os principais resultados da fase de integração e avaliação são: (i) as especificações finais de produção do sistema, conhecidas como "baseline de produção", que orientam a fabricação do produto final, e (ii) o sistema de produção propriamente dito, que inclui tudo o que é necessário para manufaturar e montar o sistema em escala.
+	Os principais resultados da fase de integração e avaliação são: (i) as especificações finais de produção do sistema, conhecidas como "baseline de produção", 
+	que orientam a fabricação do produto final, e (ii) o sistema de produção propriamente dito, que inclui tudo o que é necessário para manufaturar e montar o 
+	sistema em escala.
 
-Ferramentas modernas de integração, T\&A, bem como métodos e princípios atualizados, estão disponíveis para apoiar os engenheiros nesse processo. Antes que a produção em larga escala possa começar, é essencial que o sistema final seja verificado e validado em um ambiente operacional real ou em uma simulação que represente fielmente esse contexto.
+	Ferramentas modernas de integração, T\&A, bem como métodos e princípios atualizados, estão disponíveis para apoiar os engenheiros nesse processo. Antes que a 
+	produção em larga escala possa começar, é essencial que o sistema final seja verificado e validado em um ambiente operacional real ou em uma simulação que represente 
+	fielmente esse contexto.
+
+	\vspace{1.5 cm}
+	
+	\cite{kossiakoff2020systems} trazem ainda um relacionamento entre as fases desses dois estágios com os níveis de detalhamento do sistema. De maneira visual é destacado
+	em quais os níveis cada fase deve alcançar, consequentemente definindo o detalhamento de cada fase. Assim fica mais claro a materialização do sistema, onde as primeiras fases tocam
+	na parte mais superficial e mais abstrata, e a medida que se avança de fase, vai se adentrando nos níveis de funcionalidades, quebrando e detalhando as funções e associando-as com
+	os elementos do sistema no nível correspondente. A tabela \ref{tab:revisao:systemMaterialization} ilustra essas relações.
+
+
+	É fundamental perceber que, mesmo que o projeto detalhado só se conclua tardiamente no
+	desenvolvimento, a visualização geral do sistema deve ocorrer ainda nas fases iniciais.
+	Isso é necessário para estimar custos, viabilidade técnica e orientar a escolha do conceito do sistema.
+	A visualização inicial não precisa ser precisa em todos os detalhes, mas deve ser realista o suficiente
+	para orientar decisões viáveis.
+
+	\begin{table}[H]
+		\centering
+		\includegraphics[width=\textwidth]{./figuras/systemMaterialization.pdf}
+		\caption{Materialização do sistema, adaptado de \citep{kossiakoff2020systems}}
+		\label{tab:revisao:systemMaterialization}
+	\end{table}
+
+	\subsection{Estágios de Pós Desenvolvimento}\label{sec:revisao:ciclodevida:posDev}
+	Após a conclusão do desenvolvimento de um sistema, inicia-se a etapa pós-desenvolvimento, composta por duas fases principais, de acordo com
+	\citep{kossiakoff2020systems}: Produção e Utilização e suporte. Os autores unificaram Utilização e Suporte pois de fato seguem em paralelo a todo momento.
+	Porém, será adicionado o último estágio do ciclo de vida apresentado pelo \cite{incoseHandbook} a esse grupo, o estágio de Descontinuação. A figura
+	\ref{fig:revisao:postDevelopment} trás no mesmo estilo a representação desses estágios.
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\textwidth]{./figuras/postDevelopment.pdf}
+		\caption{Estágio de Pós Desenvolvimento, adaptado de \citep{kossiakoff2020systems}}
+		\label{fig:revisao:postDevelopment}
+	\end{figure}
 	
 	\section{Arquitetura do Sistema}\label{sec:revisao:arqSistema}
 
@@ -188,7 +245,7 @@ Ferramentas modernas de integração, T\&A, bem como métodos e princípios atua
 	sistema e são reutilizáveis para diferentes tipos cenários. O uso de \textit{Padrões de Arquitetura} agiliza  a documentação, facilita a comunicação, promove o reúso, melhora a produtividade
 	e eficiência e serve como um ponto de início para o desenvolvimento de novos sistemas.
 
-	Como o conceito de arquitetura pode ser muito abrangente, o SEBoK \citep{sebok2024} mostra três segmentações de arquitetura, a arquitetura funcional, lógica e a física.
+	Como o conceito de arquitetura pode ser muito abrangente, o SEBoK \cite{sebok2024} mostra três segmentações de arquitetura, a arquitetura funcional, lógica e a física.
 
 	A arquitetura funcional compreende as funcionalidades do sistema, ou seja, quais funções ou comportamentos aquele sistema executa ou possui em diferentes contextos para atingir os objetivos
 	esperados.
