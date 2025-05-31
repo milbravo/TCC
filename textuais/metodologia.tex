@@ -57,7 +57,7 @@ evoluções ou prosseguimento do trabalho.
 	mais fácil o entendimento da ordem das etapas. Depois traremos essa representação para o formato esperado
 	na ES. A figura \ref{fig:metodologia:processFlow} mostra esse fluxograma.
 	
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.6\textwidth]{./figuras/processFlow.pdf}
 		\caption{Fluxograma do processo que descreve o serviço prestado.}
@@ -260,7 +260,7 @@ evoluções ou prosseguimento do trabalho.
 	Olhando em conjunto para a tabela \ref{tab:revisao:systemMaterialization} sobre a materialização do sistema e as fases de Definição de Conceito e Desenvolvimento avançado,
 	é observado e destacado em vermelho e laranja os seguintes pontos falhos, mostrados na figura \ref{fig:metodologia:lifeCycleIssues}.
 
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.8\textwidth]{./figuras/lifeCycleIssues.pdf}
 		\caption{Destaque dos pontos falhos no ciclo de vida}
@@ -280,37 +280,160 @@ evoluções ou prosseguimento do trabalho.
 
 	Já em laranja, temos algumas atividades que são parcialmente realizadas no ciclo de vida atual:
 	\begin{itemize}
-		\item Análise de alternativas: Essa atividade é parcialemente realizada, pois 
-		\item Gerenciamento de riscos:
-		\item Especificações de componentes:
-	\end{itemize}	
+		\item Análise de alternativas: Essa atividade é parcialmente realizada, pois acontece a discussão de alternativas com
+		a área cliente durante a etapa de \textbf{Apresentação da linha do tempo}. Entretanto não há a documentação das mesmas e em alguns casos, uma melhor definição de conceito já descartaria opções
+		inviáveis de serem implementadas.  
+		\item Gerenciamento de riscos: Do ponto de vista gerencial ou estratégico é realizado um gerenciamento de risco sucinto no que
+		diz respeito aos prazos e marcos de entrega, novamente na etapa de \textbf{Apresentação da linha do tempo}. Por outro lado, na parte funcional e técnica esse gerenciamento deixa a desejar, como não
+		há uma definicão consistente e suficientemente detalhada, é incerto dizer possíveis pontos críticos ou que exigem maior atenção durante o desenvolvimento.
+		Logo, não são planejadas ações para reduzir ou contornar os riscos envolvidos.
+		\item Especificações de componentes: Essa tarefa esta calssificada como parcialmente realizada, pois era realizada simultaneamente com o desenvolvimento da solução na fase de \textbf{Projeto de Engenharia}.
+		Onde, semanalmente, as histórias de usuário eram detalhadas com as tarefas e especificações para serem realizadas na semana seguinte. Isso, não permite uma validação prévia e consequentemente interfere também no gerenciamento de riscos.
+		A realização dessa tarefa no momento correto intefere diretamente no bem estar do projeto e da construção do sistema.
+	\end{itemize}
 
+	Por fim, em verde temos tarefas que são executadas de maneira satisfatória durante o ciclo de vida do sistema:
+	\begin{itemize}
+		\item Define conceitos selecionados e especificações: Ao observar na tabela de materialização do sistema, percebe-se que essa tarefa diz
+		respeito ao primeiro nível, ou seja, são especificações e conceitos à nível de sistema, sem descer para níveis de maior detalhamento. Na
+		etapa \textbf{Apresentação da linha do tempo} são apresentados possiveis cenários e alternativas criadas anteriomente, como na etapa
+		de \textbf{Estimativa de tarefas e esforço} e é definido quais serão de fato considerados bem como repassadas as suas especificações.
+		\item Validação de conceito: Na mesma hierarquia, essa tarefa diz respeito à validação do conceito no nível de sistema, e isso 
+		acontece também na etapa \textbf{Apresentação da linha do tempo}.
+	\end{itemize}
 
+	O fato do sistema ser construído utilizando majoritariamente ferramentas de desenvolvimento \textit{Low-code}, faz com que exista um nível de abstração já intríseco ao sistema.
+	Dessa forma, durante as fases de \textbf{Desenvolvimento Avançado} e \textbf{Projeto de Engenharia} nao seja necessário descer aos dois últimos níveis da hierarquia do sistema, ou seja,
+	não são realizadas tarefas relacionadas aos subcomponentes ou às peças. Isso foi destacado na figura \ref{fig:metodologia:lifeCycleIssues} com a duas últimas linhas da tabela esmaecidas
+	e com a tarefa \textbf{Aloca funções a subcomponentes} em cinza na fase de \textbf{Desenvolvimento Avançado}.
 
 
 	\section{{\color{blue}Proposta de modificações}}
+
+	A partir do que foi apresentado nas seções anteriores, fica sugestivo que ações devem ser tomadas para que o ciclo de vida seja mais eficiente, focando nas fases de \textbf{Definição do Conceito} e
+	\textbf{Definição do Conceito}.
+	Na fase de definição de conceito faltam tarefas essenciais, que são dependências para a realização das tarefas da próxima fase. Elas são a criação das arquiteturas física e funcional, e a alocação de funções a componentes.
 	
+		
 	\subsection{{\color{blue}Arquitetura do Sistema}}
 
-	Na figura \ref{fig:metodologia:arquiteturaFisica} pode ser observada um padrão de arquitetura física para os sistemas desenvolvidos. Ela contém todos os possíveis
-	elementos do sistema que podem ser utilizados para a arquitetura final de cada projeto executado. 
+	É necessário estipular um estilo de arquitetura com padrões que deverão ser seguidos e atualizados, de maneira que a equipe consiga 
+	discutir o mesmo com as áreas clientes e entre sí, avaliando a qualidade estrutural e a escolha dos componentes do sistema. Tendo em vista que o tempo de vida do desenvolvimento
+	do sistema é curto, padrões muito detalhados e que é necessário um grande esforço para criação não são interessantes para compor esse estilo de arquitetura.
+
+	É proposto então a criação de dois artefatos de arquitetura, o primeiro seguindo um padrão que combina a arquitetura funcional com a lógica, baseado nas informações e requisitos obtidos
+	para o sistema. Já o outro seguindo o padrão definido para a arquitetura física do sistema, de forma a documentar os componentes e subsistemas que serão responsáveis por cobrir as funcionalidades
+	e lógicas definidas anteriormente.
+	
+	\subsubsection{{\color{blue}Padrão para Arquitetura Funcional e Lógica}}
+
+	A documentação das arquiteturas funcionais e lógicas são importantes para a construção de uma boa arquitetura física e para a que a definicão e validação de conceito seja acertiva. Como a 
+	arquitetura funcional pode compor a arquitetura lógica, optou-se por unificar essas duas em únicos documentos, de maneira que seja otimizado o tempo empenhado para esse desenvolvimento.
+
+	Esse padrão separa as funcionalidades em três grupos, Funcionalidades de Dados, Processos e Documentos, e em cada grupo foram elencadas as Funcionalidades basicas de um sistema genérico,
+	representadas pelos retângulos preenchidos de azul. De cada uma dessas funcionalidades, são derivados tópicos que elucidam o que deve ser documentado para para expressar a lógica por trás
+	da função de que derivam. As Figuras \ref{fig:metodologia:dataFunctionalities},\ref{fig:metodologia:documetFunctionalities} e \label{fig:metodologia:processFunctionalities} mostram esses grupos.
+	
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{./figuras/dataFunctionalities.pdf}
+		\caption{Padrão de arquitetura funcional e lógica relacionadas aos dados.}
+		\label{fig:metodologia:dataFunctionalities}
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{./figuras/documetFunctionalities.pdf}
+		\caption{Padrão de arquitetura funcional e lógica relacionadas a documentos.}
+		\label{fig:metodologia:documetFunctionalities}
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{./figuras/processFunctionalities.pdf}
+		\caption{Padrão de arquitetura funcional e lógica relacionadas aos processos.}
+		\label{fig:metodologia:processFunctionalities}
+	\end{figure}
+
+	Nesse padrão não é definido com qual ferramenta ou tecnologia será implementada a funcionalidade, isso será discutido na arquitetura física. Em cada sistema desenvolvido podem haver funcionalidades
+	aqui não definidas devido a particularidades de cada projeto, mas que devem ser adicionadas na documentação quando aparecer seguindo o mesmo padrão definido.
+
+	\subsubsection{{\color{blue}Padrão para Arquitetura Física}}
+
+	No padrão de arquitetura física sugerido também não foi adicionado um nível de detalhamento tão aprofundado, o fato de se utilizar ferramentas \textit{low code} deixa ainda mais fácil essa
+	simplificação. Apesar de não ser comum ou recomendado já registrar modelos ou fornecedores nessa arquitetura, devido ao contexto já definido da equipe de desenvolvimento alguns desses dados
+	já estão definidos na documentação dessa arquitetura.
+
+	Os componentes do sistema são construidos utilizando majoritariamente as ferramentas disponíveis na \textit{Power Platform} sendo elas:
+
+	O \textit{Power Apps} é uma ferramenta para o desenvolvimento ágil de aplicações personalizadas, utilizando pouco ou nenhum código. Ele permite que usuários construam interfaces gráficas
+	interativas, conectadas a múltiplas fontes de dados, como o \textit{Dataverse}, SQL Server, Excel e SharePoint. Essa ferramenta é ideal para digitalizar processos manuais e implementar
+	soluções específicas de negócios com rapidez e escalabilidade.
+
+	O \textit{Power Automate} (anteriormente conhecido como Microsoft Flow) é uma ferramenta de automação de processos que permite criar fluxos de trabalho entre diferentes serviços e
+	aplicações. É amplamente utilizado para automatizar tarefas rotineiras, como envio de notificações, aprovações de documentos, sincronização de dados entre sistemas e integração com APIs.
+
+	O \textit{Power BI} é uma plataforma de \textit{Business Intelligence} que permite a criação de relatórios interativos e dashboards dinâmicos. Ele facilita a análise de dados provenientes
+	de múltiplas fontes, promovendo a visualização e a tomada de decisões baseadas em evidências. Entre seus principais recursos estão: conexão com diferentes bancos de dados, uso de linguagem
+	DAX para cálculos, compartilhamento de painéis e integração com outras ferramentas Microsoft.
+
+	O \textit{Copilot Studio}, anteriormente conhecido como \textit{Power Virtual Agents}, é a ferramenta da Power Platform destinada à criação de assistentes virtuais e \textit{chatbots} com
+	baixa ou nenhuma necessidade de codificação. Com sua nova abordagem centrada em IA generativa, permite desenvolver copilotos inteligentes capazes de interagir com usuários, acessar dados
+	corporativos e executar ações automatizadas. É amplamente utilizado em cenários de atendimento ao cliente, suporte interno e automação de processos por meio de linguagem natural.
+
+	O \textit{Microsoft Dataverse} ou simplesmente \textit{Dataverse} é a plataforma de dados subjacente à Power Platform, projetada para armazenar, gerenciar e proteger dados empresariais estruturados. Ele fornece um modelo de
+	dados comum, com suporte nativo a tipos de dados complexos, relacionamentos, regras de negócio, validações e integração com segurança do Microsoft Entra ID (antigo Azure AD). O Dataverse é
+	fundamental para garantir consistência e integridade de dados em soluções desenvolvidas com o \textit{Power Apps}, \textit{Power Automate}, \textit{Power BI} e \textit{Copilot Studio}.
+	
+	Na figura \ref{fig:metodologia:arquiteturaFisica} pode ser observado o padrão de arquitetura física sugerido para os sistemas desenvolvidos. Ela contém todos os possíveis
+	elementos do sistema que podem ser utilizados para a arquitetura final de cada projeto executado bem como o agrupamento de subsistemas.
 	\begin{figure}[h]
 		\centering
-		% \includegraphics[width=1\textwidth]{./figuras/lcurve.eps}
 		\includegraphics[width=1\textwidth]{./figuras/arquiteturaFisica.pdf}
 		\caption{Padrão de arquitetura física dos sistemas desenvolvidos.}
 		\label{fig:metodologia:arquiteturaFisica}
 	\end{figure}
+	
+	Os Formulários são compomentes do sistema utilizados para coleta de dados e iniciar algum processo a partir de sua resposta. Sua utilização acontece principalmente quando existe
+	o envolvimento de algum fornecedor ou cliente externo, pois são acessiveis sem necessidade de uma conta interna da empresa. Cada sistema ou subsistema pode utilizar um ou mais formulários.
 
-	Já na figura \ref{fig:metodologia:arquiteturaFuncional} temos o padrão de arquitetura funcional para os sistemas desenvolvidos, e mais uma vez, contém todas as possibilidades
-	de funções disponíveis e que podem ser implementadas no sistema de interesse.
-	\begin{figure}[h]
-		\centering
-		% \includegraphics[width=1\textwidth]{./figuras/scattering.eps}
-		\includegraphics[width=1\textwidth]{./figuras/arquiteturaFuncional.pdf}
-		\caption{Padrão de arquitetura funcional dos sistemas desenvolvidos.}
-		\label{fig:metodologia:arquiteturaFuncional}
-	\end{figure}
+	O E-mail ou mais especificamente uma caixa de e-mail compartilhada é um componente que pode ser utilizado tanto para comunicações e notificações do sistema quanto para recebimento de dados
+	e arquivos por terceiros, visto que a possibilidade de anexo nos Fomulários são exclusivos quando o uso é estritamente interno. Normalmente cada sistema possui uma caixa compartilhada única
+	para seus processos, mas há casos em que são necessária múltiplas caixas.
+
+	Os Fluxos de Automação são o esqueleto da integração entre os subsistemas e sistemas externos. Cada Fluxo é um componente do sistema que realiza um conjunto de ações a partir de um gatilho.
+	Esses fluxos são classificados em três tipos, e isso se dá pelo tipo de gatilho que os acionam.	Fluxos Agendados executam sua tarefas de maneira recorrente (a cada hora, diariamente,
+	semanalmente, mensalmente ...) ou única a partir de uma data de início. Fluxos Instantâneos são acionados pela ação de um usuário em um aplicativo ou chat bot, ou são acionados por outros
+	fluxos. Fluxos Automatizados utilizam conectores já disponíveis para serem acionados a partir de um evento em algum outro sistema, por exemplo, ser acionado quando um fomulário for respondido,
+	quando um e-mail chegar na caixa de entrada, quando uma linha for criada em uma tabela no banco de dados, quando um arquivo for modificado, quando um acordo for assinado, etc. Exitem centenas
+	de conectores disponíveis para diversos sistemas, aplicações e ferramentas.	Além disso, esses Fluxos de Automação são utilizados para consumir APIs que permitem métodos HTTP, criando assim 
+	integrações com sistemas e ferramentas externas que não possuem conectores disponíveis mas que possuem API, bem como sistemas internos que foram criadas por outros times e que também tem
+	uma API disponível que seja acessível pela internet.
+
+	O Banco de Dados é um subsistema que armazena os dados do sistema, é relacional e necessita de uma modelagem e estruturação planejada, definindo os tipos dos dados de cada coluna nas tabelas,
+	bem como os relacionamentos entre as tabelas criadas. Além disso, possui funcionalidades de gerenciamento de acesso aos dados.
+
+	O Relatório de Dados apresentam gráficos, medidas e tendências, agrupados pelo nome de Visualizações, com o intuito de apresentar dados para decisões estratégicas de gestores. Os Relatórios
+	são considerados subsistemas pois tanto	a manipulação dos dados quanto os cálculos para apresentar determinadas medidas podem levar a uma complexidade elevada. Este podem ser inseridos dentro
+	de aplicativos e sites para uma facilidades de acesso aos usuários.
+
+	As APIs Internas e Externas foram elencadas como componentes do sistema pois são essenciais para viabilizar o consumo e trafego de dados entre sistemas, atuando ainda como ponte entre sistemas
+	locais e sistemas em nuvem.
+
+	O Servidor é um subsistema que possui diversos Scripts que são executados localmente, principalmente códigos de RPA. O mesmo servidor suporta diversas áreas, onde as execuçòes são orquestradas
+	para nao interferirem umas nas outras.
+
+	A Unidade de Compartilhamento é um subsistema que é um serviço utilizado como um servidor de arquivos online. Possuem como componentes Bibliotecas de Documentos para armazenamento de arquivos relacionados
+	a cada solução. Assim como no Banco de Dados, esse subsistema também possui funcionalidades de gerenciamento de acesso aos dados, no caso os documentos.
+
+	O Aplicativo é um subsistema que abrange um diversa gama de funcionalidades e componentes. Entretanto, a quebra desses componentes ficou limitada apenas à documentação das telas do aplicativo,
+	pois como já é utilizado uma ferramenta de \textit{low code} não traria muito valor descer ainda mais o nível de detalhamento. Para o Aplicativo também são definidos tipos de perfis de acesso
+	aos dados, e também a determinadas telas ou funcionalidades.
+
+	Os Agentes de IA são subsistemas que consultam Fontes de Dados como sites internos e externos, documentos e até Banco de Dados, e permitam que o usuário converse com um chat-bot do tipo RAG
+	(Retrieval-Augmented Generation) que lhe responderá com base nas informações presentes nessas fontes selecionadas.
+
 
 
 	\section{Instrumentos e Materiais}

@@ -236,20 +236,58 @@
 	
 	\section{Arquitetura do Sistema}\label{sec:revisao:arqSistema}
 
-	Como mencionado na seção \ref{sec:revisao:ciclodevida} existem diferentes processos durante o ciclo de vida de um sistema ou projeto. Um deles é o 
-	\textit{Processo de Definição da Arquitetura do Sistema}. A existência de um  \textit{Estilos de Arquitetura} é de extrema importância para que esse processo seja executado com êxito. Ele
-	atua como um modelo, ou guia, para se construir a arquitetura do sistema. Os \textit{Estilos de Arquitetura} podem ser definidos com base nos ponto de vista da arquitetura, no elementos do
+	Como mencionado na seção \ref{sec:revisao:ciclodevida} existem diferentes etapas durante o ciclo de vida de
+	um sistema. Uma delas é o ``Processo de Definição da Arquitetura do Sistema'', que tem como objetivo, conforme registrado
+	no \cite{incoseHandbook}, gerar alternatimas de arquiteturas do sistema, selecionar uma ou mais alternativa que atende aos
+	requisitos das partes interessadas, e expressar isso em uma visualização e modelos consistentes.
+
+	Dessa forma, esse processo provê informação e dados necessários para identificar e caracterizar os conceitos e
+	propriedades fundamentais do sistema e seus elementos. Esse processo é vivo ao longo do ciclo de vida, e deve ser sempre
+	retomado quando há modificações de conceitos ou de perspectivas no decorrer do desenvolvimento do sistema.
+
+	Dentre as entradas para a execução desse processo mostradas no \cite{incoseHandbook}, destacam-se os ``Requisitos do Sistema'',
+	as ``Restrições de solução'', a ``Descrição do projeto do sistema'', ``As soluções alternativas'' e um ``Projeto de arquitetura validado e verificado''.
+
+	Com essa entradas em mãos são realizadas as atividades para a definição de qual será a arquitetura definitiva do sistema. E após
+	isso temos como saídas resultantes típicas os ``Artefatos e registros da arquitetura do sistema definida'', a ``Descrição da 
+	arquitetura do sistema'', o ``Mapeamento de rastreabilidade'' e a ``Justificativa da arquitetura do sistema''.
+	 
+	A existência de um ``Estilo de Arquitetura'' é de extrema importância para que esse processo seja executado com êxito.
+	Ele	atua como um modelo, ou guia, para se construir a arquitetura do sistema. Os ``Estilos de Arquitetura'' podem 
+	ser definidos com base nos ponto de vista da arquitetura, nos elementos do
 	sistema e seus relacionamentos, nas conexões, interfaces, mecanismos de interação e possíveis restrições.
 	
-	Além dos \textit{Estilos de Arquitetura}, outro conceito importante é o de \textit{Padrões de Arquitetura}. Eles são modelos simplificados mas completos no que diz respeito aos elementos do
-	sistema e são reutilizáveis para diferentes tipos cenários. O uso de \textit{Padrões de Arquitetura} agiliza  a documentação, facilita a comunicação, promove o reúso, melhora a produtividade
+	Além dos ``Estilos de Arquitetura'', outro conceito importante é o de ``Padrões de Arquitetura''. 
+	Eles são modelos simplificados mas completos no que diz respeito aos elementos do
+	sistema e são reutilizáveis para diferentes tipos cenários. O uso de ``Padrões de Arquitetura'' agiliza  a 
+	documentação, facilita a comunicação, promove o reúso, melhora a produtividade
 	e eficiência e serve como um ponto de início para o desenvolvimento de novos sistemas.
 
-	Como o conceito de arquitetura pode ser muito abrangente, o SEBoK \cite{sebok2024} mostra três segmentações de arquitetura, a arquitetura funcional, lógica e a física.
+	Como o conceito de arquitetura pode ser muito abrangente, o SEBoK \cite{sebok2024} mostra três segmentações, a arquitetura funcional, lógica e a física.
 
-	A arquitetura funcional compreende as funcionalidades do sistema, ou seja, quais funções ou comportamentos aquele sistema executa ou possui em diferentes contextos para atingir os objetivos
-	esperados.
-	
+	A arquitetura funcional compreende as funcionalidades do sistema, ou seja, quais funções ou comportamentos 
+	aquele sistema executa ou possui em diferentes contextos para atingir os objetivos esperados pelos diferentes interessados.
+	Essa arquitetura está fortemente conectada com a definição de conceito do sistema e tem papel chave em dar início à materializaçao do sistema
+	ao traduzir esses conceitos em um projeto de sistema viável. Não há exatamente um modelo ou padrão recomendado de
+	arquitetura funcional, em casos de sistemas com poucas funcionalidades ou menos complexos, um texto descritivo já seria 
+	suficiente, em outros casos, um diagrama hierárquico de funcionalidades pode ser mais interessante. Essa arquitetura é 
+	construída já no primeiro estágio do ciclo de vida do sistema.
+
+	O desenvolvimento da arquitetura lógica tem como propósito definir, sintetizar e documentar a lógica por trás do sistema a ser desenvolvido
+	resultando em uma modelagem que poderá ser utilizada, no futuro, para verificar e validar os requisitos do sistema em todos os cenários operacionais.
+	Essa arquitetura pode incluir mais de um artefato, como um modelo de arquitetura funcional decomposta em hierarquia de funções e subfunções, um modelo de arquitetura comportamental com diagramas
+	de atividades, de estados, de fluxos de dados ou de blocos funcionais do sistema, e ainda um modelo de arquitetura temporal do sistema, com as funções do sistema 
+	classificadas de acordo com a frequência de execução, podendo incluir também os aspectos síncronos e assíncronos do sistema.
+
+	Já a na definição da arquitetura física há o propósito de elaborar modelos e visualizações concretas de soluções que acomodem a arquitetura
+	lógica e que atendam ao requisitos do sistema conforme acordado. A arquitetura física é uma organização dos elementos do sitema
+	que compõem a solução, seja ela um produto, um serviço ou até mesmo um empresa. Como existem diferentes tipos de sistema, o elemento do sistema pode
+	assumir diferentes características ou interfaces, em produtos eles podem ser de fato componentes físicos mecânicos ou eletrônicos, podem ser softwares
+	específicos e papeis de operação, já para serviços por exemplo eles podem ser bancos de dados, processos, papeis de operação, aplicações.
+	Nesse momento é feita a associação dos elementos lógicos do sistema, derivados dos requisitos, aos elementos físicos dos sistema gerando então o mapeamento de ratreabilidade.
+	Mais de uma abordagem de arquitetura pode ser sugerida às partes interessadas, que devem analisar e escolher a que melhor atende. Essa modelagem pode ser feita utilizando
+	diagramas de estrutura de blocos e layouts ou outros modelos que podem variar de acordo com o domínio que o sistema está envolvido.
+
 	{\color{blue}
 	\section{Trabalhos relacionados}
 		
