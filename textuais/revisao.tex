@@ -165,7 +165,7 @@
 	marcada por revisões formais de projeto, que permitem ao cliente acompanhar o progresso, controlar custos, revisar o cronograma e fornecer feedback essencial 
 	aos desenvolvedores.
 
-	Embora aspectos como confiabilidade, manutenibilidade e fabricabilidade – conhecidos como "Engenharia especializada" – já tenham sido considerados anteriormente, 
+	Embora aspectos como confiabilidade, manutenibilidade e fabricabilidade – conhecidos como ``Engenharia especializada'' – já tenham sido considerados anteriormente, 
 	nesta fase eles assumem um papel central. O engenheiro de sistemas tem a responsabilidade de garantir que cada componente implementa corretamente os requisitos 
 	funcionais e de compatibilidade, além de coordenar o processo de mudanças de engenharia para manter o controle das interfaces e da configuração do sistema.
 
@@ -192,7 +192,7 @@
 	Frequentemente, a execução dessa fase exige a construção de instalações específicas capazes de simular estímulos operacionais e restrições reais, de modo a 
 	permitir uma avaliação precisa do desempenho do sistema. A complexidade e os recursos necessários para essa infraestrutura não devem ser subestimados.
 
-	Os principais resultados da fase de integração e avaliação são: (i) as especificações finais de produção do sistema, conhecidas como "baseline de produção", 
+	Os principais resultados da fase de integração e avaliação são: (i) as especificações finais de produção do sistema, conhecidas como ``baseline de produção'', 
 	que orientam a fabricação do produto final, e (ii) o sistema de produção propriamente dito, que inclui tudo o que é necessário para manufaturar e montar o 
 	sistema em escala.
 
@@ -200,7 +200,7 @@
 	produção em larga escala possa começar, é essencial que o sistema final seja verificado e validado em um ambiente operacional real ou em uma simulação que represente 
 	fielmente esse contexto.
 
-	\vspace{1.5 cm}
+	\vspace{1.5 cm} % Precisa desse espaçamento?
 	
 	\cite{kossiakoff2020systems} trazem ainda um relacionamento entre as fases desses dois estágios com os níveis de detalhamento do sistema. De maneira visual é destacado
 	em quais os níveis cada fase deve alcançar, consequentemente definindo o detalhamento de cada fase. Assim fica mais claro a materialização do sistema, onde as primeiras fases tocam
@@ -263,7 +263,7 @@
 	documentação, facilita a comunicação, promove o reúso, melhora a produtividade
 	e eficiência e serve como um ponto de início para o desenvolvimento de novos sistemas.
 
-	Como o conceito de arquitetura pode ser muito abrangente, o SEBoK \cite{sebok2024} mostra três segmentações, a arquitetura funcional, lógica e a física.
+	Como o conceito de arquitetura pode ser muito abrangente, o \cite{sebok2024} mostra três segmentações, a arquitetura funcional, lógica e a física.
 
 	A arquitetura funcional compreende as funcionalidades do sistema, ou seja, quais funções ou comportamentos 
 	aquele sistema executa ou possui em diferentes contextos para atingir os objetivos esperados pelos diferentes interessados.
@@ -293,12 +293,12 @@
 		
 		\subsection{Low Code Development Cycle Investigation}
 		O uso de \textit{low code} nas organizações tem diferentes motivos, um deles é o empoderamento de seus funcionários como citado por \cite{LowCodeLifeCicle}. 
-		Ao qualificar e incentivar os funcionários a utilizarem essas tecnologias para resolverem seus problema, são criadas comunidades de \textit{citizen developers} que em tradução
-		livre pode ser chamado de ``desenvolvedores cidadãos'', ou seja, usuários finais que mesmo sem conhecimentos técnicos aprofundados em desenvolvimento de softwares, conseguem criar
-		automações e aplicativos simples para sí próprios, devido a baixa barreira de entrada para se adotar essas tecnologias. Dessa maneira, são economizados ou evitados investimentos em
+		Ao qualificar e incentivar os funcionários a utilizarem essas tecnologias para resolverem seus problemas, são criadas comunidades de \textit{citizen developers}, que em tradução livre pode ser 
+		chamado de ``desenvolvedores cidadãos''. Estes são usuários finais que, mesmo sem conhecimentos técnicos aprofundados em desenvolvimento de softwares, conseguem criar automações e aplicativos 
+		simples para si próprios, devido à baixa barreira de entrada para se adotar essas tecnologias. Dessa maneira, são economizados ou evitados investimentos em
 		infraestrutura e recursos humanos para se manter e criar soluções que utilizam código proficional ou \textit{pro code}, que é muito impactante no orçamento de pequenas e médias empresas.
 
-		Ainda em \cite{LowCodeLifeCicle} é introduzido o papel dos ``facilitadores \textit{low code}'', que são justamente desenvolvedores proficionais que suportam, capacitam e ajudam a
+		Ainda em \cite{LowCodeLifeCicle} é introduzido o papel dos ``facilitadores \textit{low code}'', que são justamente desenvolvedores profissionais que suportam, capacitam e ajudam a
 		fortalecer a comunidade de \textit{citizen developers}. A autora ainda faz um segregação em dois cenários de desenvolvimento, um para pequenas e médias empresas onde o desenvolvimento
 		é feito inteiramente pelo \textit{citizen developer} e todos os elementos e requisitos do sistema são sua responsabilidade. O outro cenário é mais comum em grandes empresas onde há 
 		a integração com sistemas externos ou legados, e assim é necessário o envolvimento das partes interessadas na elucidação dos requisitos e na definição das lógicas de negócio. Esse
@@ -317,10 +317,12 @@
 		ferramentas \textit{low-code} abordando sua definição, suas características, seus benefícios e seus desafios.
 		O autor trás seguinte definição para o desenvolvimento de software \textit{low-code}:
 
-		``é uma abordagem de desenvolvimento que melhora o desenvolvimento rápido, flexível e iterativo tornando possível
+		\begin{quoting}
+		\noindent (...) é uma abordagem de desenvolvimento que melhora o desenvolvimento rápido, flexível e iterativo tornando possível
 		uma rápida tradução dos requisitos de negócios através de uma programação visual com uma interface gráfica, abstração visual, 
 		e minimizando a programação manual; envolvendo praticantes com variadas bases de conhecimento e níveis de experiência em 
-		desenvolvimento de software.''
+		desenvolvimento de software.
+		\end{quoting}
 
 		Uma plataforma de desenvolvimento \textit{low-code} possui algumas funcionalidades chave que são necessárias para viabilizar um 
 		ambiente gerenciável e um desenvolvimento rápido e robusto. Uma dessas funcionalidades indicadas é o suporte à modelagem dos requisitos. A importância dessa funcionalidade segundo 
@@ -330,10 +332,10 @@
 		O ciclo de vida de desenvolvimento \textit{low-code} proposto em \cite{LowCodeExploring} é bem semelhante a um ciclo de vida ágil, com as seguintes etapas: idealização e análise 
 		de requisitos, planejamento, design da aplicação, desenvolvimento, testes, implantação, e manutenção.
 
-		Dentre os benfícios citados pelo trabalho para a utilização do \textit{low-code}, está a reduçao de custo, aceleração do ciclo de desenvolvimento, aumento da responsividades 
-		ao negócio e mercado, promoção da invação digital e maior colaboração entre o time de desenvolvimento e negócios.
+		Dentre os benefícios citados pelo trabalho para a utilização do \textit{low-code}, está a redução de custo, aceleração do ciclo de desenvolvimento, aumento da responsividades 
+		ao negócio e mercado, promoção da inovação digital e maior colaboração entre o time de desenvolvimento e negócios.
 
-		Em contraste, os desafios para essa abordagem apresentados na etapa de análise de requisitos são a especificação dos requisitos e a contante mudança dos requisitos. E um dos 13 princípios 
+		Em contraste, os desafios para essa abordagem apresentados na etapa de análise de requisitos são a especificação dos requisitos e a constante mudança dos requisitos. E um dos 13 princípios 
 		apresentados para o desenvolvimento \textit{low-code} é justamente suportar essa mudança nos requisitos. Isso retém os clientes e vai de encontro com as necessidades do negócio, 
 		onde as organizaçoes precisam dessa habilidade para responder a mudanças de mercado e processos. Os autores deixam claro ainda que os desenvolvedores \textit{low-code} devem manter um mente aberta
 		para essas mudanças, permitindo deixar fluir a dinâmica do mercado e do negócio. Pelo fato dessa abordagem de desenvolvimento ser rápida e ter um ciclo de vida mais curto, isso se torna possível 

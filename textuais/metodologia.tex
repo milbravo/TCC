@@ -55,16 +55,16 @@ evoluções ou prosseguimento do trabalho.
 
 	Inicialmente definiu-se em formato de fluxograma o processo do serviço prestado, para dessa forma ser 
 	mais fácil o entendimento da ordem das etapas. Depois traremos essa representação para o formato esperado
-	na ES. A figura \ref{fig:metodologia:processFlow} mostra esse fluxograma.
+	na ES. A Figura \ref{fig:metodologia:processFlow} mostra esse fluxograma.
 	
-	\begin{figure}[H]
+	\begin{figure}[!tb]
 		\centering
 		\includegraphics[width=0.6\textwidth]{./figuras/processFlow.pdf}
 		\caption{Fluxograma do processo que descreve o serviço prestado.}
 		\label{fig:metodologia:processFlow}
 	\end{figure}
 	
-	Entrando agora no detalhamento de cada um dos blocos existentes:
+	Cada um dos blocos do fluxograma representa uma etapa do processo, e cada etapa é descrita abaixo:
 	\begin{itemize}
 		\item \textbf{Formulário de novo desenvolvimento}
 		\begin{itemize}
@@ -169,16 +169,16 @@ evoluções ou prosseguimento do trabalho.
 		\end{itemize}
 	\end{itemize}
 
-	Para as áreas que não optaram por seguir com um acordo de suporte e melhorias, caso seja necessário uma nova implementação ou modificação relacionada à soluçao desenvolvida, deverão responder novamente o formulário e passar por todo o processo de análise de retorno por investimento e priorização, como uma nova demanda.
+	Para as áreas que não optaram por seguir com um acordo de suporte e melhorias, caso seja necessário uma nova implementação ou modificação relacionada à solução desenvolvida, deverão responder novamente o formulário e passar por todo o processo de análise de retorno por investimento e priorização, como uma nova demanda.
 	Já as que tem o acordo de suporte e melhorias, podem utilizar as horas mensais e fazer o balanceamento das mesmas para realizar essas implementações sem passar por todo o processo. Entretanto, mesmo com o acordo, caso seja uma modificação muito grande ou uma nova funcionalidade que demande muito tempo de desenvolvimento, é necessário responder o formulário e iniciar como uma nova demanda ao time, porém ao fim não precisam de um novo acordo de suporte e melhorias, pois já o possuem.
 
-	Trazendo o cilo de vida em ``V'' mencionado anteriormente, as areas que possuem o contrato de suporte percorrem todas os estágios, dos dois lados do ``V''. Já as outras áreas,
+	Trazendo o ciclo de vida em ``V'' mencionado anteriormente, as áreas que possuem o contrato de suporte percorrem todas os estágios, dos dois lados do ``V''. Já as outras áreas,
 	param na primeira metade.
 
 	\subsection{{\color{blue}Adequação de representação}}
 
 	Tendo todas as etapas do processo sido explicadas, são feitas sua relações com os estágios e fases do ciclo de vida proposto na engenharia de sistemas.
-	De maneira descritiva sem ainda avaliar a otimização ou melhoria do ciclo de vida podemos representar o ciclo de vida com as figuras \ref{fig:metodologia:currentConceptPhases}, \ref{fig:metodologia:currentDevelopmentPhases} e \ref{fig:metodologia:currentPostDevelopmentPhases}.
+	De maneira descritiva, sem ainda avaliar a otimização ou melhoria do ciclo de vida, podemos representar o ciclo de vida com as figuras \ref{fig:metodologia:currentConceptPhases}, \ref{fig:metodologia:currentDevelopmentPhases} e \ref{fig:metodologia:currentPostDevelopmentPhases}.
 	
 	\begin{figure}[h]
 		\centering
@@ -237,7 +237,7 @@ evoluções ou prosseguimento do trabalho.
 	Ressaltando que o sistema vai ser utilizado, mas deixa de ser responsabilidade do time de desenvolvimento.
 
 	O estágio de \textbf{Utilização e Suporte} compreende as etapas de \textbf{Acordo de suporte e melhorias} e \textbf{Rotina de utilização e suporte}, onde os usuários, já utilizando o sistema, relatam falhas, problemas e melhorias que são corrigidas
-	ou implementas ainda nesse estágio, ou seja, a segunda metade do ciclo de vida em ``V''.
+	ou implementadas ainda nesse estágio, ou seja, a segunda metade do ciclo de vida em ``V''.
 
 	Ainda não existe uma etapa criada para \textbf{Descontinuação}, sendo que o time é relativamente novo com cerca de dois anos de criação
 	não houve caso de obsolescência mapeado até então.
@@ -246,21 +246,24 @@ evoluções ou prosseguimento do trabalho.
 
 	Ao longo da repetição desse ciclo de vida para cada solução desenvolvida, já havia sido notado um deficiência
 	na parte de definição e validação de conceito. Por vezes, já no fim da fase de \textbf{Projeto de Engenharia} ou durante a fase de \textbf{Integração e avaliação}
-	eram identificadas funcionalidades essenciais que não havia sido mapeadas, ou ainda um desenvolviemento que tecnicamente funcionava mas que desenpanhava uma 
+	eram identificadas funcionalidades essenciais que não havia sido mapeadas, ou ainda um desenvolvimento que tecnicamente funcionava mas que desempenhava uma 
 	funcionalidade desalinhada com a real intenção das partes interessadas.
 
 	Olhando para a representação do ciclo de vida de acordo com as definições da ES, fica mais claro identificar a raiz dessa deficiência bem como o que
-	pode ser feito para mudar. A transição entre os estágios de Conceito e Desenvolviemento, marcado pelas fases de Definição de Conceito e Desenvolvimento avançado, apresenta
+	pode ser feito para mudar. A transição entre os estágios de Conceito e Desenvolvimento, marcado pelas fases de Definição de Conceito e Desenvolvimento Avançado, apresenta
 	uma falta de artefatos ou documentos que permitiriam essa transição de forma suave mas concisa.
 
-	Um ponto em destaque é que no caso essas duas fases estão representadas por uma única etapa, e que não contempla todas as características das fases, a etapa
-	de \textbf{Apresentação da linha do tempo}. Ela comtempla características como a definição e validação do conceito do sistema, mas não desce mais níveis na hierarquia,
-	como validação de subsistemas ou alocação de componentes.
+	Um ponto relevante é que essas duas fases estão sendo representadas por uma única etapa 
+	no processo atual: a \textbf{Apresentação da linha do tempo}. Esta etapa contempla 
+	apenas parcialmente as características necessárias das fases, abordando aspectos 
+	como a definição e validação do conceito do sistema em nível macro. Contudo, ela não 
+	desce para níveis mais detalhados da hierarquia, deixando de lado elementos essenciais 
+	como a validação de subsistemas e a alocação de funções aos componentes.
 
 	Olhando em conjunto para a tabela \ref{tab:revisao:systemMaterialization} sobre a materialização do sistema e as fases de Definição de Conceito e Desenvolvimento avançado,
-	é observado e destacado em vermelho e laranja os seguintes pontos falhos, mostrados na figura \ref{fig:metodologia:lifeCycleIssues}.
+	é observado e destacado em vermelho e laranja os seguintes pontos falhos, mostrados na Figura \ref{fig:metodologia:lifeCycleIssues}.
 
-	\begin{figure}[H]
+	\begin{figure}[!htb]
 		\centering
 		\includegraphics[width=0.8\textwidth]{./figuras/lifeCycleIssues.pdf}
 		\caption{Destaque dos pontos falhos no ciclo de vida}
@@ -269,49 +272,57 @@ evoluções ou prosseguimento do trabalho.
 
 	Em vermelho, temos as tarefas ou atividades que são completamente ignoradas nessas fases:
 	\begin{itemize}
-		\item Arquitetura física e funcional: não é realizada a documentação da arquitetura do sistema na fase de definição de conceito, mesmo que os
-		desenvolvedores já tenham uma boa noção de como seria o resultado final, sem esses artefatos não é possível a validação dos subsistemas, ou mesmo realizar um gerenciamento
-		de riscos efetivo. Sem as arquiteturas definidas, mesmo que em auto nível, as outras partes interessadas não conseguem contribuir tanto no ponderamentos.
-		\item Aloca funções a componentes: como não existe nenhuma das duas arquiteturas essa tarefa não é realizada, pois seria justamente definir as relacões entre as arquiteturas,
-		e gerando assim uma forma de garantir a rastreabilidade do sistema.
-		\item Validação de subsistemas: essa é outra tarefa que não é realizada justamente fela falta da documentação das arquiteturas do sistema. Sendo assim, é a raiz de algumas falhas de entendimento
-		dos requisitos e que acarretam a inclusão ou modificação de funcionalidades no estágio de \textbf{Integração e avaliação}, e que afeta diretamente nos prazos estipulados.
+		\item Arquitetura física e funcional: Não é realizada a documentação da arquitetura do 
+		sistema na fase de definição de conceito. Embora os desenvolvedores já possuam uma boa 
+		noção de como seria o resultado final, a ausência desses artefatos impede a validação 
+		dos subsistemas e a realização de um gerenciamento de riscos efetivo. Sem as arquiteturas 
+		definidas, mesmo em alto nível, as outras partes interessadas não conseguem contribuir 
+		adequadamente nas ponderações.
+		\item Alocação de funções a componentes: Como não existe nenhuma das duas arquiteturas, 
+		essa tarefa não é realizada. Essa tarefa seria justamente responsável por definir as 
+		relações entre as arquiteturas, gerando assim uma forma de garantir a rastreabilidade do 
+		sistema.
+		\item Validação de subsistemas: Essa tarefa também não é realizada devido à falta da 
+		documentação das arquiteturas do sistema. Essa deficiência constitui a raiz de algumas 
+		falhas de entendimento dos requisitos, que acarretam a inclusão ou modificação de 
+		funcionalidades no estágio de \textbf{Integração e avaliação}, afetando diretamente os 
+		prazos estipulados.
 	\end{itemize}
 
 	Já em laranja, temos algumas atividades que são parcialmente realizadas no ciclo de vida atual:
 	\begin{itemize}
 		\item Análise de alternativas: Essa atividade é parcialmente realizada, pois acontece a discussão de alternativas com
-		a área cliente durante a etapa de \textbf{Apresentação da linha do tempo}. Entretanto não há a documentação das mesmas e em alguns casos, uma melhor definição de conceito já descartaria opções
+		a área cliente durante a etapa de \textbf{Apresentação da linha do tempo}. Entretanto, não há a documentação das mesmas e, em alguns casos, uma melhor definição de conceito já descartaria opções
 		inviáveis de serem implementadas.  
-		\item Gerenciamento de riscos: Do ponto de vista gerencial ou estratégico é realizado um gerenciamento de risco sucinto no que
-		diz respeito aos prazos e marcos de entrega, novamente na etapa de \textbf{Apresentação da linha do tempo}. Por outro lado, na parte funcional e técnica esse gerenciamento deixa a desejar, como não
-		há uma definicão consistente e suficientemente detalhada, é incerto dizer possíveis pontos críticos ou que exigem maior atenção durante o desenvolvimento.
+		\item Gerenciamento de riscos: Do ponto de vista gerencial ou estratégico, é realizado um gerenciamento de risco sucinto no que
+		diz respeito aos prazos e marcos de entrega, novamente na etapa de \textbf{Apresentação da linha do tempo}. Por outro lado, na parte funcional e técnica, esse gerenciamento deixa a desejar. Como não
+		há uma definição consistente e suficientemente detalhada, é incerto dizer quais são os possíveis pontos críticos ou que exigem maior atenção durante o desenvolvimento.
 		Logo, não são planejadas ações para reduzir ou contornar os riscos envolvidos.
-		\item Especificações de componentes: Essa tarefa esta calssificada como parcialmente realizada, pois era realizada simultaneamente com o desenvolvimento da solução na fase de \textbf{Projeto de Engenharia}.
-		Onde, semanalmente, as histórias de usuário eram detalhadas com as tarefas e especificações para serem realizadas na semana seguinte. Isso, não permite uma validação prévia e consequentemente interfere também no gerenciamento de riscos.
-		A realização dessa tarefa no momento correto intefere diretamente no bem estar do projeto e da construção do sistema.
+		\item Especificações de componentes: Essa tarefa está classificada como parcialmente realizada, pois era realizada simultaneamente com o desenvolvimento da solução na fase de \textbf{Projeto de Engenharia}.
+		Semanalmente, as histórias de usuário eram detalhadas com as tarefas e especificações para serem realizadas na semana seguinte. Isso não permite uma validação prévia e, consequentemente, interfere também no gerenciamento de riscos.
+		A realização dessa tarefa no momento correto interfere diretamente no bem-estar do projeto e da construção do sistema.
 	\end{itemize}
 
 	Por fim, em verde temos tarefas que são executadas de maneira satisfatória durante o ciclo de vida do sistema:
 	\begin{itemize}
-		\item Define conceitos selecionados e especificações: Ao observar na tabela de materialização do sistema, percebe-se que essa tarefa diz
-		respeito ao primeiro nível, ou seja, são especificações e conceitos à nível de sistema, sem descer para níveis de maior detalhamento. Na
-		etapa \textbf{Apresentação da linha do tempo} são apresentados possiveis cenários e alternativas criadas anteriomente, como na etapa
-		de \textbf{Estimativa de tarefas e esforço} e é definido quais serão de fato considerados bem como repassadas as suas especificações.
-		\item Validação de conceito: Na mesma hierarquia, essa tarefa diz respeito à validação do conceito no nível de sistema, e isso 
-		acontece também na etapa \textbf{Apresentação da linha do tempo}.
+			\item Define conceitos selecionados e especificações: Ao observar a tabela de materialização do sistema, percebe-se que essa tarefa diz
+			respeito ao primeiro nível, ou seja, são especificações e conceitos em nível de sistema, sem descer para níveis de maior detalhamento. Na
+			etapa \textbf{Apresentação da linha do tempo} são apresentados possíveis cenários e alternativas criados anteriormente, como na etapa
+			de \textbf{Estimativa de tarefas e esforço}, e é definido quais serão de fato considerados, bem como repassadas as suas especificações.
+			\item Validação de conceito: Na mesma hierarquia, essa tarefa diz respeito à validação do conceito no nível de sistema, e isso 
+			acontece também na etapa \textbf{Apresentação da linha do tempo}.
 	\end{itemize}
 
-	O fato do sistema ser construído utilizando majoritariamente ferramentas de desenvolvimento \textit{Low-code}, faz com que exista um nível de abstração já intríseco ao sistema.
-	Dessa forma, durante as fases de \textbf{Desenvolvimento Avançado} e \textbf{Projeto de Engenharia} nao seja necessário descer aos dois últimos níveis da hierarquia do sistema, ou seja,
-	não são realizadas tarefas relacionadas aos subcomponentes ou às peças. Isso foi destacado na figura \ref{fig:metodologia:lifeCycleIssues} com a duas últimas linhas da tabela esmaecidas
+	O fato de o sistema ser construído utilizando majoritariamente ferramentas de desenvolvimento \textit{low-code} faz com que exista um nível de abstração já intrínseco ao sistema.
+	Dessa forma, durante as fases de \textbf{Desenvolvimento Avançado} e \textbf{Projeto de Engenharia}, não é necessário descer aos dois últimos níveis da hierarquia do sistema, ou seja,
+	não são realizadas tarefas relacionadas aos subcomponentes ou às peças. Isso foi destacado na figura \ref{fig:metodologia:lifeCycleIssues}, com as duas últimas linhas da tabela esmaecidas
 	e com a tarefa \textbf{Aloca funções a subcomponentes} em cinza na fase de \textbf{Desenvolvimento Avançado}.
 
 
 	\section{{\color{blue}Proposta de modificações}}
 
 	A partir do que foi apresentado nas seções anteriores, fica sugestivo que ações devem ser tomadas para que o ciclo de vida seja mais eficiente, focando nas fases de \textbf{Definição do Conceito} e
-	\textbf{Definição do Conceito}.
+	\textbf{Desenvolvimento Avançado}.
 	Na fase de definição de conceito faltam tarefas essenciais, que são dependências para a realização das tarefas da próxima fase. Elas são a criação das arquiteturas física e funcional, e a alocação de funções a componentes.
 	
 		
@@ -327,64 +338,67 @@ evoluções ou prosseguimento do trabalho.
 	
 	\subsubsection{{\color{blue}Padrão para Arquitetura Funcional e Lógica}}
 
-	A documentação das arquiteturas funcionais e lógicas são importantes para a construção de uma boa arquitetura física e para a que a definicão e validação de conceito seja acertiva. Como a 
+	A documentação das arquiteturas funcionais e lógicas são importantes para a construção de uma boa arquitetura física e para a que a definição e validação de conceito seja assertiva. Como a 
 	arquitetura funcional pode compor a arquitetura lógica, optou-se por unificar essas duas em únicos documentos, de maneira que seja otimizado o tempo empenhado para esse desenvolvimento.
-
-	Esse padrão separa as funcionalidades em três grupos, Funcionalidades de Dados, Processos e Documentos, e em cada grupo foram elencadas as Funcionalidades basicas de um sistema genérico,
-	representadas pelos retângulos preenchidos de azul. De cada uma dessas funcionalidades, são derivados tópicos que elucidam o que deve ser documentado para para expressar a lógica por trás
-	da função de que derivam. As Figuras \ref{fig:metodologia:dataFunctionalities},\ref{fig:metodologia:documetFunctionalities} e \label{fig:metodologia:processFunctionalities} mostram esses grupos.
 	
+	Esse padrão separa as funcionalidades em três grupos: Funcionalidades de Dados, Processos e Documentos. Em cada grupo foram elencadas as funcionalidades básicas de um sistema genérico,
+	representadas pelos retângulos preenchidos de azul. De cada uma dessas funcionalidades são derivados tópicos que elucidam o que deve ser documentado para expressar a lógica por trás
+	da função de que derivam. As Figuras \ref{fig:metodologia:dataFunctionalities}, \ref{fig:metodologia:documetFunctionalities} e \ref{fig:metodologia:processFunctionalities} mostram esses grupos.
 
-	\begin{figure}[H]
+	\begin{figure}[!htb]
 		\centering
 		\includegraphics[width=1\textwidth]{./figuras/dataFunctionalities.pdf}
 		\caption{Padrão de arquitetura funcional e lógica relacionadas aos dados.}
 		\label{fig:metodologia:dataFunctionalities}
 	\end{figure}
 
-	\begin{figure}[H]
+	\begin{figure}[!htb]
 		\centering
 		\includegraphics[width=1\textwidth]{./figuras/documetFunctionalities.pdf}
 		\caption{Padrão de arquitetura funcional e lógica relacionadas a documentos.}
 		\label{fig:metodologia:documetFunctionalities}
 	\end{figure}
 
-	\begin{figure}[H]
+	\begin{figure}[!htb]
 		\centering
 		\includegraphics[width=1\textwidth]{./figuras/processFunctionalities.pdf}
 		\caption{Padrão de arquitetura funcional e lógica relacionadas aos processos.}
 		\label{fig:metodologia:processFunctionalities}
 	\end{figure}
 
-	Nesse padrão não é definido com qual ferramenta ou tecnologia será implementada a funcionalidade, isso será discutido na arquitetura física. Em cada sistema desenvolvido podem haver funcionalidades
-	aqui não definidas devido a particularidades de cada projeto, mas que devem ser adicionadas na documentação quando aparecer seguindo o mesmo padrão definido.
+	Nesse padrão, não é definido com qual ferramenta ou tecnologia cada funcionalidade será implementada, pois isso será abordado posteriormente na arquitetura física. Cada sistema desenvolvido pode apresentar funcionalidades específicas não contempladas neste padrão devido às particularidades de cada projeto. Quando essas funcionalidades adicionais surgirem, elas devem ser incorporadas à documentação seguindo o mesmo padrão aqui estabelecido.
 
 	\subsubsection{{\color{blue}Padrão para Arquitetura Física}}
 
-	No padrão de arquitetura física sugerido também não foi adicionado um nível de detalhamento tão aprofundado, o fato de se utilizar ferramentas \textit{low code} deixa ainda mais fácil essa
-	simplificação. Apesar de não ser comum ou recomendado já registrar modelos ou fornecedores nessa arquitetura, devido ao contexto já definido da equipe de desenvolvimento alguns desses dados
-	já estão definidos na documentação dessa arquitetura.
+	O padrão de arquitetura física proposto mantém um nível de detalhamento apropriado 
+	para o contexto de desenvolvimento. A utilização de ferramentas \textit{low code} 
+	permite essa simplificação sem comprometer a eficácia da documentação. Embora não 
+	seja prática comum incluir modelos ou fornecedores específicos na documentação de 
+	arquitetura física, o contexto já estabelecido da equipe de desenvolvimento 
+	justifica a inclusão desses elementos nesta proposta.
 
-	Os componentes do sistema são construidos utilizando majoritariamente as ferramentas disponíveis na \textit{Power Platform} sendo elas:
+	Os componentes do sistema são construídos utilizando majoritariamente as ferramentas disponíveis na \textit{Power Platform} sendo elas:
 
-	O \textit{Power Apps} é uma ferramenta para o desenvolvimento ágil de aplicações personalizadas, utilizando pouco ou nenhum código. Ele permite que usuários construam interfaces gráficas
-	interativas, conectadas a múltiplas fontes de dados, como o \textit{Dataverse}, SQL Server, Excel e SharePoint. Essa ferramenta é ideal para digitalizar processos manuais e implementar
-	soluções específicas de negócios com rapidez e escalabilidade.
+	\begin{itemize}
+		\item \textit{Power Apps}: É uma ferramenta para o desenvolvimento ágil de aplicações personalizadas, utilizando pouco ou nenhum código. Ele permite que usuários construam interfaces gráficas
+		interativas, conectadas a múltiplas fontes de dados, como o \textit{Dataverse}, SQL Server, Excel e SharePoint. Essa ferramenta é ideal para digitalizar processos manuais e implementar
+		soluções específicas de negócios com rapidez e escalabilidade.
 
-	O \textit{Power Automate} (anteriormente conhecido como Microsoft Flow) é uma ferramenta de automação de processos que permite criar fluxos de trabalho entre diferentes serviços e
-	aplicações. É amplamente utilizado para automatizar tarefas rotineiras, como envio de notificações, aprovações de documentos, sincronização de dados entre sistemas e integração com APIs.
+		\item \textit{Power Automate}: (anteriormente conhecido como Microsoft Flow) é uma ferramenta de automação de processos que permite criar fluxos de trabalho entre diferentes serviços e
+		aplicações. É amplamente utilizado para automatizar tarefas rotineiras, como envio de notificações, aprovações de documentos, sincronização de dados entre sistemas e integração com APIs.
 
-	O \textit{Power BI} é uma plataforma de \textit{Business Intelligence} que permite a criação de relatórios interativos e dashboards dinâmicos. Ele facilita a análise de dados provenientes
-	de múltiplas fontes, promovendo a visualização e a tomada de decisões baseadas em evidências. Entre seus principais recursos estão: conexão com diferentes bancos de dados, uso de linguagem
-	DAX para cálculos, compartilhamento de painéis e integração com outras ferramentas Microsoft.
+		\item \textit{Power BI}: É uma plataforma de \textit{Business Intelligence} que permite a criação de relatórios interativos e dashboards dinâmicos. Ele facilita a análise de dados provenientes
+		de múltiplas fontes, promovendo a visualização e a tomada de decisões baseadas em evidências. Entre seus principais recursos estão: conexão com diferentes bancos de dados, uso de linguagem
+		DAX para cálculos, compartilhamento de painéis e integração com outras ferramentas Microsoft.
 
-	O \textit{Copilot Studio}, anteriormente conhecido como \textit{Power Virtual Agents}, é a ferramenta da Power Platform destinada à criação de assistentes virtuais e \textit{chatbots} com
-	baixa ou nenhuma necessidade de codificação. Com sua nova abordagem centrada em IA generativa, permite desenvolver copilotos inteligentes capazes de interagir com usuários, acessar dados
-	corporativos e executar ações automatizadas. É amplamente utilizado em cenários de atendimento ao cliente, suporte interno e automação de processos por meio de linguagem natural.
+		\item \textit{Copilot Studio}: Anteriormente conhecido como \textit{Power Virtual Agents}, é a ferramenta da Power Platform destinada à criação de assistentes virtuais e \textit{chatbots} com
+		baixa ou nenhuma necessidade de codificação. Com sua nova abordagem centrada em IA generativa, permite desenvolver copilotos inteligentes capazes de interagir com usuários, acessar dados
+		corporativos e executar ações automatizadas. É amplamente utilizado em cenários de atendimento ao cliente, suporte interno e automação de processos por meio de linguagem natural.
 
-	O \textit{Microsoft Dataverse} ou simplesmente \textit{Dataverse} é a plataforma de dados subjacente à Power Platform, projetada para armazenar, gerenciar e proteger dados empresariais estruturados. Ele fornece um modelo de
-	dados comum, com suporte nativo a tipos de dados complexos, relacionamentos, regras de negócio, validações e integração com segurança do Microsoft Entra ID (antigo Azure AD). O Dataverse é
-	fundamental para garantir consistência e integridade de dados em soluções desenvolvidas com o \textit{Power Apps}, \textit{Power Automate}, \textit{Power BI} e \textit{Copilot Studio}.
+		\item \textit{Microsoft Dataverse}: Ou simplesmente \textit{Dataverse} é a plataforma de dados subjacente à Power Platform, projetada para armazenar, gerenciar e proteger dados empresariais estruturados. Ele fornece um modelo de
+		dados comum, com suporte nativo a tipos de dados complexos, relacionamentos, regras de negócio, validações e integração com segurança do Microsoft Entra ID (antigo Azure AD). O Dataverse é
+		fundamental para garantir consistência e integridade de dados em soluções desenvolvidas com o \textit{Power Apps}, \textit{Power Automate}, \textit{Power BI} e \textit{Copilot Studio}.
+	\end{itemize}
 	
 	Na figura \ref{fig:metodologia:arquiteturaFisica} pode ser observado o padrão de arquitetura física sugerido para os sistemas desenvolvidos. Ela contém todos os possíveis
 	elementos do sistema que podem ser utilizados para a arquitetura final de cada projeto executado bem como o agrupamento de subsistemas.
@@ -438,7 +452,7 @@ evoluções ou prosseguimento do trabalho.
 
 	\section{Instrumentos e Materiais}
 
-	A documentação do ciclo de vida atual do sistema de serviço será feita a partir do desenvolvimento de diagrams que representarão os estágios e etapas do ciclo de vida do serviço prestado. Nelas serão destacas as saídas e entradas. O diagrama será confeccionado na ferramenta online \textit{Draw.io}, 
+	A documentação do ciclo de vida atual do sistema de serviço será feita a partir do desenvolvimento de diagramas que representarão os estágios e etapas do ciclo de vida do serviço prestado. Nelas serão destacas as saídas e entradas. O diagrama será confeccionado na ferramenta online \textit{Draw.io}, 
 	que é uma ferramenta gratuita para o desenho de diagramas de diferentes 
 	tipos e não restringe o salvamento do arquivo final, mantendo 
 	assim a alta qualidade dos diagramas com imagens vetorizadas. 

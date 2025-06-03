@@ -16,6 +16,31 @@
 \setlength{\parskip}{0cm} % Define o espaçamento entre parágrafos para 0 cm
 \renewcommand\contentsname{Sumário} % Renomeia o título do sumário para "Sumário"
 
+% Configurações para melhorar a hifenização em português
+\hyphenpenalty=750 % Reduz a penalidade por hifenização (padrão é 1000)
+\tolerance=1414 % Aumenta a tolerância a espaços entre palavras (padrão é 200)
+\emergencystretch=1em % Permite esticar mais o texto antes de recorrer à hifenização
+
+% Definições específicas de hifenização para termos técnicos
+\hyphenation{
+  Low-Code 
+  re-qui-si-tos
+  a-pri-mo-ra-men-to
+  sis-te-mas
+  pro-ces-sos
+  ci-clo-de-vi-da
+}
+
+% Configurações personalizadas para citações
+\quotingsetup{
+  leftmargin=1.25cm,    % Margem esquerda (mesma que parindent)
+  rightmargin=1.25cm,   % Margem direita
+  vskip=1.5em,         % Espaçamento vertical antes e depois (pode ser ajustado conforme necessidade)
+  font=itshape,         % Texto em itálico
+  begintext={``},       % Texto de início (aspas iniciais)
+  endtext={''}          % Texto de fim (aspas finais)
+}
+
 % Define novos ambientes para teoremas, lemas, proposições, corolários, resultados e definições. Você deve traduzir para o inglês se estiver escrevendo em inglês.
 \newtheorem{theorem}{Teorema} % Define o ambiente "theorem" com a numeração independente
 \newtheorem{lemma}[theorem]{Lema} % Define o ambiente "lemma" com a mesma numeração do ambiente "theorem"
