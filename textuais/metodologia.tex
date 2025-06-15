@@ -448,106 +448,14 @@ Por fim, propõe-se uma coleta de resultados para a análise e avaliação do tr
 	Foi feito um levantamento das tarefas e esforços definidos anteriomente nas histórias de usuário para o desenvolvimentos dos elementos do sistema, separados em categorias,
 	para as soluções já entregues e em produção, antes da aplicação das propostas apresentadas. Com isso, são definidas medidas estatísticas de Média de Pontos/Tarefas e Desvio Padrão de Pontos/Tarefas,
 	onde cada tarefa recebeu pontos de esforço seguindo a sequência de Fibonacci.
-	
-	Na Tabela \ref{tab:esforco_solucoes_historico} vemos a relação das histórias de usuário, representadas por seu identificador na coluna ``ID'' e seus dados de números de
-	tarefas e pontos de esforço totais extraídas da	base histórica da equipe, foi adicionada ainda, na última coluna, a relação de ``(Pontos)/(Número de Tarefas)'' para ser
+
+	A relação das histórias de usuário, é composta pelo identificador na coluna ``ID'', seus dados de números de
+	tarefas, os pontos de esforço totais extraídas da base histórica da equipe e foi adicionada ainda, na última coluna, a relação de ``(Pontos)/(Número de Tarefas)'' para ser
 	utilizada nos cálculos das estatísticas a serem comparadas posteriormente com os novos dados a serem coletados.
-
-	\begin{longtable}{cccccc}
-		\label{tab:esforco_solucoes_historico} \\
-		\toprule
-		\textbf{ID} & \textbf{Solução} & \textbf{Categoria} & \textbf{Tarefas} & \textbf{Pontos} & \textbf{Pontos por Tarefa} \\
-		\midrule
-		\endfirsthead
-
-		\toprule
-		\textbf{ID} & \textbf{Solução} & \textbf{Categoria} & \textbf{Tarefas} & \textbf{Pontos} & \textbf{Pontos por Tarefa} \\
-		\midrule
-		\endhead
-
-		\midrule
-		\multicolumn{6}{r}{\textit{continua na próxima página}} \\
-		\midrule
-		\endfoot
-
-		\bottomrule
-		\caption{Distribuição de esforço por solução e categoria}
-		\endlastfoot
-
-		169913 & A & Automação & 1 & 5 & 5.00 \\
-		169967 & B & Automação & 2 & 7 & 3.50 \\
-		169981 & B & Automação & 2 & 7 & 3.50 \\
-		170102 & B & Automação & 1 & 5 & 5.00 \\
-		169525 & C & Automação & 1 & 5 & 5.00 \\
-		169516 & C & Automação & 1 & 5 & 5.00 \\
-		169517 & C & Automação & 1 & 3 & 3.00 \\
-		169515 & C & Automação & 1 & 3 & 3.00 \\
-		169523 & C & Automação & 2 & 7 & 3.50 \\
-		169521 & C & Automação & 1 & 3 & 3.00 \\
-		169518 & C & Automação & 1 & 5 & 5.00 \\
-		170090 & E & Automação & 2 & 8 & 4.00 \\
-		170085 & E & Automação & 1 & 5 & 5.00 \\
-		169821 & E & Automação & 2 & 6 & 3.00 \\
-		169665 & F & Automação & 2 & 5 & 2.50 \\
-		169671 & F & Automação & 2 & 10 & 5.00 \\
-		169881 & G & Automação & 4 & 17 & 4.25 \\
-		170032 & H & Automação & 1 & 5 & 5.00 \\
-		170045 & H & Automação & 1 & 5 & 5.00 \\
-		169281 & I & Automação & 1 & 8 & 8.00 \\
-		169294 & I & Automação & 1 & 8 & 8.00 \\
-		171835 & I & Automação & 4 & 21 & 5.25 \\
-		169834 & B & Banco de dados & 1 & 8 & 8.00 \\
-		169640 & D & Banco de dados & 3 & 6 & 2.00 \\
-		170055 & H & Banco de dados & 1 & 3 & 3.00 \\
-		169482 & I & Banco de dados & 5 & 15 & 3.00 \\
-		169508 & C & Relatório de dados & 3 & 9 & 3.00 \\
-		174691 & E & Relatório de dados & 3 & 8 & 2.67 \\
-		169545 & I & Relatório de dados & 4 & 15 & 3.75 \\
-		169699 & A & Script & 5 & 11 & 2.20 \\
-		169731 & A & Script & 7 & 14 & 2.00 \\
-		169941 & A & Script & 3 & 9 & 3.00 \\
-		170128 & H & Script & 2 & 8 & 4.00 \\
-		170073 & A & Tela & 3 & 5 & 1.67 \\
-		169645 & A & Tela & 5 & 13 & 2.60 \\
-		169539 & A & Tela & 2 & 5 & 2.50 \\
-		170005 & A & Tela & 2 & 4 & 2.00 \\
-		170120 & B & Tela & 1 & 5 & 5.00 \\
-		169789 & B & Tela & 1 & 5 & 5.00 \\
-		169778 & B & Tela & 2 & 8 & 4.00 \\
-		169953 & B & Tela & 5 & 13 & 2.60 \\
-		169556 & D & Tela & 5 & 12 & 2.40 \\
-		169553 & D & Tela & 7 & 22 & 3.14 \\
-		169639 & D & Tela & 5 & 10 & 2.00 \\
-		170052 & H & Tela & 2 & 10 & 5.00 \\
-		169293 & I & Tela & 2 & 10 & 5.00 \\
-		169388 & I & Tela & 1 & 5 & 5.00 \\
-		169612 & I & Tela & 1 & 5 & 5.00 \\
-		169372 & I & Tela & 1 & 5 & 5.00 \\
-		169354 & I & Tela & 1 & 8 & 8.00 \\
-		169405 & I & Tela & 1 & 8 & 8.00 \\
-		169546 & I & Tela & 7 & 32 & 4.57 \\
-	\end{longtable}
 	
-	Na Tabela \ref{tab:media_desvio_historico}, estão as estatísticas calculadas por categoria do tipo de desenvolvimento. Foi escolhida essa métrica de (Pontos)/(Número de Tarefas) para
+	As estatísticas foram calculadas por categoria do tipo de desenvolvimento. Foi escolhida essa métrica de (Pontos)/(Número de Tarefas) para
 	a análise, pois se trata de uma comparação que pode ser analisada mesmo entre categorias, e não é afetada pela complexidade do desenvolvimento, que seria o caso ao se analizar o número de tarefas ou
 	o esforço total separadamente. Nesse caso é analisada a distribuição do esforço entre as tarefas, e como está esse comportamento em cada categoria.
-
-	\begin{table}[!htb]
-		\centering
-		\begin{tabular}{ccc}
-			\toprule
-			\textbf{Categoria} & \textbf{Média de Pontos/Tarefas} & \textbf{Desvio Padrão de Pontos/Tarefas} \\
-			\midrule
-			Automação          & 4.52                             & 1.44                               \\
-			Banco de dados     & 4.00                             & 2.71                               \\
-			Relatório de dados & 3.14                             & 0.55                               \\
-			Script             & 2.80                             & 0.91                               \\
-			Tela               & 4.13                             & 1.85                               \\
-			\bottomrule
-		\end{tabular}
-		\caption{Média e desvio padrão dos pontos de esforço por tarefa, por categoria, antes de aplicar as mudanças sugeridas}
-		\label{tab:media_desvio_historico}
-	\end{table}
 	
 	Após o desenvolvimento de novas soluções aplicando as propostas de arquitetura para a definição e validação de conceito, novos dados coletados vão compor os resultados a serem analisados e
 	comparados com esse levantamento histórico.
